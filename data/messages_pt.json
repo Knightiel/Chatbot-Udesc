@@ -1,0 +1,205 @@
+{
+  "welcome": "🎓 *Olá! Bem-vindo(a) ao ChatBot da UDESC!*\n\nEste assistente foi criado para auxiliar estudantes estrangeiros em intercâmbio na Universidade do Estado de Santa Catarina.\n\n🌐 *Hello! Welcome to UDESC ChatBot!*\nThis assistant was created to help international exchange students.\n\n━━━━━━━━━━━━━━━━━━━━\n*Escolha seu idioma / Choose your language:*\n1️⃣  Português\n2️⃣  English",
+
+  "main_menu": "📋 *MENU PRINCIPAL — UDESC*\n\nDigite o número da opção:\n\n1️⃣  Endereços dos Centros UDESC\n2️⃣  Sistemas Acadêmicos\n3️⃣  Como obter o ID UDESC\n4️⃣  Informações sobre CPF\n5️⃣  Tutoria Acadêmica\n6️⃣  Serviço de Orientação ao Estudante (SOE)\n7️⃣  Residência Estudantil\n8️⃣  FAQ — Perguntas Frequentes\n9️⃣  Contatos de Emergência\n0️⃣  Encerrar conversa\n\n💡 A qualquer momento: *menu* → início  |  *voltar* → anterior  |  *sair* → encerrar",
+
+  "invalid_option": "❌ Opção inválida. Digite um número do menu ou *menu* para ver as opções.",
+
+  "goodbye": "👋 Até logo! Bom intercâmbio na UDESC! 🎓\nSe precisar de ajuda, é só enviar uma mensagem.",
+
+  "navigation_hint": "\n\n━━━━━━━━━━━━━━━━━━━━\n💡 *menu* → Menu principal  |  *voltar* → Anterior  |  *sair* → Encerrar",
+
+  "centers": {
+    "list_header": "🏛️ *CENTROS DA UDESC*\n\nEscolha o número do centro:\n\n",
+    "items": [
+      {
+        "id": "cct",
+        "name": "CCT — Centro de Ciências Tecnológicas",
+        "city": "Joinville/SC",
+        "address": "Rua Paulo Malschitzki, 200 — Zona Industrial Norte, Joinville/SC — CEP 89219-710",
+        "phone": "(47) 3481-7900",
+        "website": "https://www.udesc.br/cct",
+        "maps": "https://maps.google.com/?q=UDESC+CCT+Joinville+SC",
+        "tutoria_email": "tutoria.cct@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cct/tutoriaacademica",
+        "tutoria_phone": "(47) 3481-7900",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h30 às 17h30",
+        "secretaria_email": "secretaria.cct@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Visconde de Taunay, 427 — Centro, Joinville/SC | Tel: (47) 3441-5900 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "cefid",
+        "name": "CEFID — Centro de Ciências da Saúde e do Esporte",
+        "city": "Florianópolis/SC",
+        "address": "Rua Pascoal Simone, 358 — Coqueiros, Florianópolis/SC — CEP 88080-350",
+        "phone": "(48) 3664-8600",
+        "website": "https://www.udesc.br/cefid",
+        "maps": "https://maps.google.com/?q=UDESC+CEFID+Florianopolis+SC",
+        "tutoria_email": "tutoria.cefid@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cefid/tutoria",
+        "tutoria_phone": "(48) 3664-8600",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h30 às 17h30",
+        "secretaria_email": "secretaria.cefid@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "faed",
+        "name": "FAED — Centro de Ciências Humanas e da Educação",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2007 — Itacorubi, Florianópolis/SC — CEP 88035-901",
+        "phone": "(48) 3664-8150",
+        "website": "https://www.udesc.br/faed",
+        "maps": "https://maps.google.com/?q=UDESC+FAED+Florianopolis+SC",
+        "tutoria_email": "tutoria.faed@udesc.br",
+        "tutoria_site": "https://www.udesc.br/faed/tutoria",
+        "tutoria_phone": "(48) 3664-8150",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h30 às 17h30",
+        "secretaria_email": "secretaria.faed@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "esag",
+        "name": "ESAG — Escola Superior de Administração e Gerência",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2037 — Itacorubi, Florianópolis/SC — CEP 88035-001",
+        "phone": "(48) 3664-8500",
+        "website": "https://www.udesc.br/esag",
+        "maps": "https://maps.google.com/?q=UDESC+ESAG+Florianopolis+SC",
+        "tutoria_email": "tutoria.esag@udesc.br",
+        "tutoria_site": "https://www.udesc.br/esag/tutoria",
+        "tutoria_phone": "(48) 3664-8500",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h30 às 17h30",
+        "secretaria_email": "secretaria.esag@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "cav",
+        "name": "CAV — Centro de Ciências Agroveterinárias",
+        "city": "Lages/SC",
+        "address": "Av. Luís de Camões, 2090 — Conta Dinheiro, Lages/SC — CEP 88520-000",
+        "phone": "(49) 2101-9100",
+        "website": "https://www.udesc.br/cav",
+        "maps": "https://maps.google.com/?q=UDESC+CAV+Lages+SC",
+        "tutoria_email": "tutoria.cav@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cav/tutoria",
+        "tutoria_phone": "(49) 2101-9100",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h às 17h",
+        "secretaria_email": "secretaria.cav@udesc.br",
+        "has_residencia": true,
+        "residencia_info": "O CAV dispõe de residência estudantil para alunos de baixa renda. Estudantes estrangeiros podem se candidatar mediante apresentação de documentação e comprovação de necessidade socioeconômica.",
+        "receita_federal": "Rua Cel. Vidal Ramos Jr, 14 — Centro, Lages/SC | Tel: (49) 3224-3005 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "ceavi",
+        "name": "CEAVI — Centro de Educação Superior do Alto Vale do Itajaí",
+        "city": "Ibirama/SC",
+        "address": "Rua Dr. Getúlio Vargas, 2822 — Limoeiro, Ibirama/SC — CEP 89140-000",
+        "phone": "(47) 3357-7100",
+        "website": "https://www.udesc.br/ceavi",
+        "maps": "https://maps.google.com/?q=UDESC+CEAVI+Ibirama+SC",
+        "tutoria_email": "tutoria.ceavi@udesc.br",
+        "tutoria_site": "https://www.udesc.br/ceavi/tutoria",
+        "tutoria_phone": "(47) 3357-7100",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h às 17h",
+        "secretaria_email": "secretaria.ceavi@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua XV de Novembro, 627 — Centro, Blumenau/SC | Tel: (47) 3321-6400 | Seg-Sex 07h às 13h"
+      },
+      {
+        "id": "ceo",
+        "name": "CEO — Centro de Educação Superior do Oeste",
+        "city": "Chapecó/SC",
+        "address": "Rua Beloni Trombeta Zanin, 680E — Santo Antônio, Chapecó/SC — CEP 89867-000",
+        "phone": "(49) 2049-9500",
+        "website": "https://www.udesc.br/ceo",
+        "maps": "https://maps.google.com/?q=UDESC+CEO+Chapeco+SC",
+        "tutoria_email": "tutoria.ceo@udesc.br",
+        "tutoria_site": "https://www.udesc.br/ceo/tutoria",
+        "tutoria_phone": "(49) 2049-9500",
+        "tutoria_hours": "Segunda a sexta, 08h às 12h e 13h às 17h",
+        "secretaria_email": "secretaria.ceo@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Marechal Deodoro, 228 — Centro, Chapecó/SC | Tel: (49) 3311-6200 | Seg-Sex 07h às 13h"
+      }
+    ]
+  },
+
+  "systems": {
+    "header": "💻 *SISTEMAS ACADÊMICOS DA UDESC*\n\nEscolha o sistema:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Sistema Integrado de Gestão Acadêmica",
+        "detail": "📊 *SIGA — Sistema Integrado de Gestão Acadêmica*\n\nO SIGA é utilizado para:\n• Consultar notas e faltas\n• Verificar histórico escolar\n• Acessar grade horária\n• Solicitar documentos (declarações, histórico)\n\n🔗 Acesso: https://www.siga.udesc.br\n\n🔑 *Requisitos de acesso:*\n• ID UDESC (ex: nome.sobrenome)\n• Senha cadastrada no sistema\n• Matrícula ativa\n\n💡 Primeira vez? Use a opção 3 do menu para obter seu ID UDESC."
+      },
+      {
+        "id": "sigaa",
+        "name": "SIGAA",
+        "description": "Sistema Integrado de Gestão de Atividades Acadêmicas",
+        "detail": "📚 *SIGAA — Sistema Integrado de Gestão de Atividades Acadêmicas*\n\nO SIGAA é utilizado para:\n• Acessar materiais das disciplinas\n• Enviar trabalhos e atividades\n• Comunicar-se com professores\n• Ver calendário acadêmico e turmas\n\n🔗 Acesso: https://www.sigaa.udesc.br\n\n🔑 *Requisitos de acesso:*\n• ID UDESC\n• Senha institucional\n• Cadastro ativo na disciplina (feito pelo professor)"
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "Plataforma de Ensino a Distância",
+        "detail": "🖥️ *Moodle UDESC — Plataforma de Ensino*\n\nO Moodle é utilizado para:\n• Acessar conteúdo e materiais das disciplinas\n• Enviar exercícios e trabalhos\n• Participar de fóruns e debates\n• Realizar provas e questionários online\n\n🔗 Acesso: https://moodle.udesc.br\n\n🔑 *Requisitos de acesso:*\n• Mesmo ID UDESC e senha institucional\n• Professor precisa adicionar o aluno à turma\n• Qualquer navegador moderno"
+      },
+      {
+        "id": "sas",
+        "name": "SAS",
+        "description": "Sistema de Agendamento de Salas",
+        "detail": "🏫 *SAS — Sistema de Agendamento de Salas*\n\nO SAS permite:\n• Verificar disponibilidade de salas e laboratórios\n• Agendar espaços para estudo em grupo\n• Consultar agendamentos vigentes\n\n🔗 Acesso: Pelo portal do seu centro UDESC\n\n🔑 *Requisitos de acesso:*\n• ID UDESC\n• Vínculo ativo com a universidade"
+      },
+      {
+        "id": "office365",
+        "name": "Office 365",
+        "description": "Suite Microsoft institucional (e-mail + apps)",
+        "detail": "📧 *Office 365 — Microsoft para UDESC*\n\nCom o Office 365 você acessa:\n• E-mail institucional (@edu.udesc.br)\n• Microsoft Word, Excel, PowerPoint (online e instalável)\n• OneDrive — 1TB de armazenamento em nuvem\n• Microsoft Teams — videoconferências\n\n🔗 Acesso: https://portal.office.com\n\n🔑 *Requisitos de acesso:*\n• Login: seuID@edu.udesc.br\n• Senha: mesma do ID UDESC\n\n💡 Seu e-mail institucional é criado automaticamente com o ID UDESC."
+      },
+      {
+        "id": "biblioteca",
+        "name": "Biblioteca Online",
+        "description": "Acervo digital, TCCs e periódicos científicos",
+        "detail": "📖 *Biblioteca Online UDESC*\n\nA Biblioteca oferece:\n• Busca de livros físicos e e-books\n• Repositório de TCCs, dissertações e teses\n• Acesso a periódicos científicos (CAPES)\n• Renovação de empréstimos online\n\n🔗 Portal: https://www.udesc.br/bibliotecas\n📚 Repositório: https://repositorio.udesc.br\n\n🔑 *Requisitos:*\n• Número de matrícula ou ID UDESC\n• Para empréstimo físico: carteirinha estudantil"
+      },
+      {
+        "id": "site",
+        "name": "Site UDESC",
+        "description": "Portal institucional — cursos, professores, PPC",
+        "detail": "🌐 *Site Institucional UDESC*\n\nNo site você encontra:\n• Planos de Curso (PPC) de todos os cursos\n• Informações sobre professores e departamentos\n• Notícias, eventos e editais\n• Contatos institucionais\n\n🔗 Site: https://www.udesc.br\n📋 PPCs: https://www.udesc.br/graduacao/ppc"
+      }
+    ]
+  },
+
+  "id_udesc": "🔐 *COMO OBTER O ID UDESC*\n\nO ID UDESC é seu login institucional, válido para SIGA, SIGAA, Moodle, Office 365 e todos os sistemas da universidade.\n\n📋 *Passo a passo:*\n\n1️⃣ Acesse: https://estudante.udesc.br\n\n2️⃣ Clique em *\"Primeiro Acesso\"* ou *\"Ativar ID UDESC\"*\n\n3️⃣ Informe seu *CPF* e *data de nascimento*\n\n4️⃣ Crie uma senha (mínimo 8 caracteres, letras e números)\n\n5️⃣ Confirme pelo e-mail pessoal cadastrado na matrícula\n\n✅ Pronto! Formato do ID: *nome.sobrenome* (ex: joao.silva)\n\n⚠️ *Requisito:* Você precisa ter um CPF válido e matrícula ativa.\n\n🆘 Problemas? Contate a tutoria do seu centro ou a STI:\n📧 sti@udesc.br\n🔗 https://www.udesc.br/sti/idudesc",
+
+  "cpf": "🪪 *INFORMAÇÕES SOBRE CPF*\n\nO CPF (Cadastro de Pessoa Física) é *obrigatório* para estudantes estrangeiros no Brasil. Você precisará dele para abrir conta bancária, obter chip de celular e acessar sistemas do governo.\n\n📱 *Como solicitar online:*\n\n1️⃣ Acesse: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Clique em *\"Cadastrar CPF\"* → *\"Estrangeiro residente no exterior\"*\n\n3️⃣ Preencha seus dados pessoais (nome, data de nascimento, país)\n\n4️⃣ Pague a taxa de R$ 7,00 (gerada no portal)\n\n⚠️ *ATENÇÃO — Validação presencial obrigatória para estrangeiros:*\nApós o cadastro online, você *deve comparecer pessoalmente* a uma agência da Receita Federal para validar. Leve: passaporte + visto válido.\n\n📍 *Receita Federal por cidade:*\n\n🏙️ *Joinville (CCT):*\nRua Visconde de Taunay, 427 — Centro\nTel: (47) 3441-5900 | Seg-Sex 07h–13h\nhttps://maps.google.com/?q=Receita+Federal+Joinville+SC\n\n🏙️ *Florianópolis (CEFID/FAED/ESAG):*\nRua Tenente Silveira, 229 — Centro\nTel: (48) 3251-7200 | Seg-Sex 07h–13h\nhttps://maps.google.com/?q=Receita+Federal+Florianopolis+SC\n\n🏙️ *Lages (CAV):*\nRua Cel. Vidal Ramos Jr, 14 — Centro\nTel: (49) 3224-3005 | Seg-Sex 07h–13h\n\n🏙️ *Chapecó (CEO):*\nRua Marechal Deodoro, 228 — Centro\nTel: (49) 3311-6200 | Seg-Sex 07h–13h",
+
+  "soe": "🎓 *SERVIÇO DE ORIENTAÇÃO AO ESTUDANTE (SOE)*\n\nO SOE oferece apoio psicológico, social e pedagógico a todos os estudantes da UDESC, *incluindo estrangeiros*.\n\n📋 *Serviços:*\n• Atendimento psicológico e emocional\n• Apoio em dificuldades acadêmicas\n• Auxílio na adaptação cultural ao Brasil\n• Encaminhamento para serviços de saúde\n• Apoio em situações de vulnerabilidade social\n\n🕐 *Horário de atendimento:*\nSegunda a sexta, 08h às 18h\n(verifique o horário específico do seu centro)\n\n🔗 *Site:* https://www.udesc.br/soe\n📧 *E-mail:* soe@udesc.br\n\n📍 *Localização:*\nO SOE funciona em cada centro. Pergunte na secretaria do seu centro onde fica o atendimento.\n\n💡 O SOE pode ajudar especialmente com a adaptação cultural ao Brasil e à UDESC.",
+
+  "residencia": {
+    "header": "🏠 *RESIDÊNCIA ESTUDANTIL*\n\nA disponibilidade de residência varia por centro. Selecione o seu:\n\n",
+    "not_available": "🏠 *Residência Estudantil — {center}*\n\nEste centro *não possui* residência estudantil própria.\n\n💡 *Alternativas de moradia:*\n• Repúblicas estudantis (compartilhamento de casa)\n• Kitnets e apartamentos próximos ao campus\n• Grupos de WhatsApp de alunos da UDESC\n• A tutoria do seu centro pode indicar opções\n\n📞 Fale com a tutoria para indicações de moradia próxima e segura.",
+    "available_template": "🏠 *Residência Estudantil — {center}*\n\n✅ *Este centro possui residência estudantil!*\n\n{residencia_info}\n\n📞 *Para mais informações e inscrições:*\n{tutoria_contact}"
+  },
+
+  "faq": {
+    "header": "❓ *FAQ — PERGUNTAS FREQUENTES*\n\nEscolha a categoria:\n\n1️⃣  Restaurante Universitário\n2️⃣  Transporte\n3️⃣  Internet Wi-Fi\n4️⃣  Impressão\n5️⃣  Bancos e Câmbio\n6️⃣  Chip de Celular\n7️⃣  Moradia\n",
+    "items": {
+      "ru": "🍽️ *RESTAURANTE UNIVERSITÁRIO (RU)*\n\nAlguns centros da UDESC possuem refeitório ou convênio com restaurantes próximos.\n\n🏛️ *CCT — Joinville:*\nBandejão estudantil com valor subsidiado para alunos regulares.\nHorário: 11h às 14h (almoço)\n\n💡 Verifique com a tutoria do seu centro sobre valores e dias de funcionamento atualizados.\n\n🔗 Assistência Estudantil: https://www.udesc.br/assistenciaestudantil",
+      "transporte": "🚌 *TRANSPORTE*\n\n🚍 *Ônibus urbano:*\n• Joinville: https://www.gttransjoinville.com.br\n• Florianópolis: https://www.consorciofloripa.com.br\n\n📱 *Aplicativos de transporte:*\n• Uber: https://www.uber.com/br\n• 99: https://www.99app.com\n\n🎓 *Passe estudantil (meia-tarifa):*\nEstudantes matriculados têm direito à meia-tarifa no transporte público. Solicite na secretaria do seu centro com comprovante de matrícula.\n\n✈️ *Aeroportos mais próximos:*\n• Joinville: Aeroporto Lauro Carneiro de Loyola\n• Florianópolis: Aeroporto Hercílio Luz\n• Lages: Aeroporto Antônio Correia Pinto de Macedo",
+      "wifi": "📶 *INTERNET WI-FI*\n\n✅ *Rede UDESC:*\nTodos os campus oferecem Wi-Fi gratuito para alunos.\n\n🌍 *Rede Eduroam:*\nA UDESC faz parte da rede Eduroam — conecte-se em universidades do mundo todo com seu login institucional!\n\n📱 *Como conectar:*\n1️⃣ Selecione a rede *UDESC* ou *eduroam*\n2️⃣ Login: seuID@udesc.br\n3️⃣ Senha: senha institucional do ID UDESC\n\n🔗 Mais informações: https://www.udesc.br/sti/redes",
+      "impressao": "🖨️ *IMPRESSÃO*\n\n📄 *Nos laboratórios:*\nAlguns centros têm serviço de impressão para estudantes. Consulte a secretaria ou tutoria do seu centro sobre valores e disponibilidade.\n\n🏪 *Gráficas próximas:*\nHá gráficas e copiadoras nas proximidades de todos os campus. A tutoria pode indicar as mais acessíveis.\n\n💡 *Dica:* Use o OneDrive (Office 365) para salvar e acessar seus arquivos em qualquer computador da universidade.",
+      "bancos": "🏦 *BANCOS E CÂMBIO*\n\n🏧 *Principais bancos brasileiros:*\nBanco do Brasil, Caixa, Bradesco, Itaú e Santander possuem agências nas cidades dos centros UDESC.\n\n📱 *Bancos digitais (mais fáceis para estrangeiros):*\n• Nubank: https://nubank.com.br\n• Inter: https://bancointer.com.br\n• C6 Bank: https://c6bank.com.br\n\n💡 Bancos digitais geralmente abrem conta com apenas CPF e selfie — sem exigência de fiador!\n\n📋 *Documentos para conta em banco tradicional:*\n• CPF válido e validado\n• Passaporte\n• Comprovante de residência\n• Visto de estudante\n\n💱 *Câmbio e transferências internacionais:*\n• Wise: https://wise.com (taxas mais baixas)\n• Casas de câmbio no centro das cidades",
+      "chip": "📱 *CHIP DE CELULAR*\n\n📋 *Documentos necessários:*\n• CPF (obrigatório!)\n• Passaporte\n\n📡 *Principais operadoras:*\n• Claro: https://www.claro.com.br\n• Vivo: https://www.vivo.com.br\n• TIM: https://www.tim.com.br\n• Oi: https://www.oi.com.br\n\n💡 *Dica para estrangeiros:*\nCompre primeiro um *chip pré-pago* — não exige comprovante de residência!\nChips são vendidos em lojas das operadoras, farmácias e supermercados.\n\n📶 Joinville e Florianópolis têm ótima cobertura 4G/5G de todas as operadoras.",
+      "moradia": "🏠 *MORADIA*\n\n🏘️ *Tipos de moradia:*\n• *República:* Casa compartilhada com estudantes — opção mais econômica\n• *Kitnet:* Studio individual com cozinha\n• *Apartamento compartilhado:* 2-3 pessoas dividem aluguel\n\n📱 *Onde buscar:*\n• OLX: https://www.olx.com.br\n• Quinto Andar: https://www.quintoandar.com.br\n• Grupos de estudantes da UDESC no Facebook/WhatsApp\n\n📞 *A tutoria pode ajudar:*\nA equipe de tutoria costuma ter lista de imóveis próximos e indicações de bairros seguros.\n\n💰 *Valores médios (Joinville — CCT):*\n• Quarto em república: R$ 500 a R$ 900/mês\n• Kitnet: R$ 700 a R$ 1.300/mês\n• Apartamento compartilhado: R$ 600 a R$ 1.000/mês por pessoa\n\n⚠️ Para alugar, geralmente é exigido fiador brasileiro ou seguro-fiança."
+    }
+  },
+
+  "emergency": "🚨 *CONTATOS DE EMERGÊNCIA*\n\n📞 *Ligue agora:*\n🚓 Polícia Militar: *190*\n🚑 SAMU (Ambulância): *192*\n🚒 Corpo de Bombeiros: *193*\n📞 Central de Emergências: *199*\n\n🏥 *Hospitais por cidade:*\n• Joinville: Hospital Municipal São José — (47) 3461-9000\n• Florianópolis: Hospital Universitário (HU-UFSC) — (48) 3721-9100\n• Lages: Hospital de Caridade — (49) 3221-2700\n• Chapecó: Hospital Regional do Oeste — (49) 3323-2666\n\n🚖 *Transporte de emergência:*\n• Uber: app Uber\n• 99: app 99\n• Joinville Táxi: (47) 3433-9500\n\n🛂 *Questões migratórias/consulares:*\n• Polícia Federal: https://www.gov.br/pf/pt-br\n• Ministério das Relações Exteriores: https://www.gov.br/mre\n\n⚠️ *Em caso de emergência médica, ligue 192 (SAMU) imediatamente!*"
+}

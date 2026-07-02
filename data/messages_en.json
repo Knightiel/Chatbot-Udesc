@@ -1,0 +1,205 @@
+{
+  "welcome": "🎓 *Hello! Welcome to UDESC ChatBot!*\n\nThis assistant was created to help international exchange students at the State University of Santa Catarina.\n\n━━━━━━━━━━━━━━━━━━━━\n*Choose your language / Escolha seu idioma:*\n1️⃣  Português\n2️⃣  English",
+
+  "main_menu": "📋 *MAIN MENU — UDESC*\n\nType the option number:\n\n1️⃣  UDESC Campus Addresses\n2️⃣  Academic Systems\n3️⃣  How to Get Your UDESC ID\n4️⃣  CPF Information\n5️⃣  Academic Tutoring\n6️⃣  Student Counseling Service (SOE)\n7️⃣  Student Housing\n8️⃣  FAQ — Frequently Asked Questions\n9️⃣  Emergency Contacts\n0️⃣  End conversation\n\n💡 Anytime: *menu* → home  |  *back* → previous  |  *exit* → quit",
+
+  "invalid_option": "❌ Invalid option. Type a number from the menu or *menu* to see options.",
+
+  "goodbye": "👋 Goodbye! Enjoy your exchange at UDESC! 🎓\nIf you need help, just send a message.",
+
+  "navigation_hint": "\n\n━━━━━━━━━━━━━━━━━━━━\n💡 *menu* → Main menu  |  *back* → Previous  |  *exit* → Quit",
+
+  "centers": {
+    "list_header": "🏛️ *UDESC CAMPUSES*\n\nChoose the campus number:\n\n",
+    "items": [
+      {
+        "id": "cct",
+        "name": "CCT — Center of Technological Sciences",
+        "city": "Joinville/SC",
+        "address": "Rua Paulo Malschitzki, 200 — Zona Industrial Norte, Joinville/SC — ZIP 89219-710",
+        "phone": "+55 (47) 3481-7900",
+        "website": "https://www.udesc.br/cct",
+        "maps": "https://maps.google.com/?q=UDESC+CCT+Joinville+SC",
+        "tutoria_email": "tutoria.cct@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cct/tutoriaacademica",
+        "tutoria_phone": "+55 (47) 3481-7900",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1:30pm–5:30pm",
+        "secretaria_email": "secretaria.cct@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Visconde de Taunay, 427 — Centro, Joinville/SC | Tel: (47) 3441-5900 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "cefid",
+        "name": "CEFID — Center of Health and Sport Sciences",
+        "city": "Florianópolis/SC",
+        "address": "Rua Pascoal Simone, 358 — Coqueiros, Florianópolis/SC — ZIP 88080-350",
+        "phone": "+55 (48) 3664-8600",
+        "website": "https://www.udesc.br/cefid",
+        "maps": "https://maps.google.com/?q=UDESC+CEFID+Florianopolis+SC",
+        "tutoria_email": "tutoria.cefid@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cefid/tutoria",
+        "tutoria_phone": "+55 (48) 3664-8600",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1:30pm–5:30pm",
+        "secretaria_email": "secretaria.cefid@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "faed",
+        "name": "FAED — Center of Humanities and Education",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2007 — Itacorubi, Florianópolis/SC — ZIP 88035-901",
+        "phone": "+55 (48) 3664-8150",
+        "website": "https://www.udesc.br/faed",
+        "maps": "https://maps.google.com/?q=UDESC+FAED+Florianopolis+SC",
+        "tutoria_email": "tutoria.faed@udesc.br",
+        "tutoria_site": "https://www.udesc.br/faed/tutoria",
+        "tutoria_phone": "+55 (48) 3664-8150",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1:30pm–5:30pm",
+        "secretaria_email": "secretaria.faed@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "esag",
+        "name": "ESAG — School of Business Administration and Management",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2037 — Itacorubi, Florianópolis/SC — ZIP 88035-001",
+        "phone": "+55 (48) 3664-8500",
+        "website": "https://www.udesc.br/esag",
+        "maps": "https://maps.google.com/?q=UDESC+ESAG+Florianopolis+SC",
+        "tutoria_email": "tutoria.esag@udesc.br",
+        "tutoria_site": "https://www.udesc.br/esag/tutoria",
+        "tutoria_phone": "+55 (48) 3664-8500",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1:30pm–5:30pm",
+        "secretaria_email": "secretaria.esag@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Tenente Silveira, 229 — Centro, Florianópolis/SC | Tel: (48) 3251-7200 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "cav",
+        "name": "CAV — Center of Agroveterinary Sciences",
+        "city": "Lages/SC",
+        "address": "Av. Luís de Camões, 2090 — Conta Dinheiro, Lages/SC — ZIP 88520-000",
+        "phone": "+55 (49) 2101-9100",
+        "website": "https://www.udesc.br/cav",
+        "maps": "https://maps.google.com/?q=UDESC+CAV+Lages+SC",
+        "tutoria_email": "tutoria.cav@udesc.br",
+        "tutoria_site": "https://www.udesc.br/cav/tutoria",
+        "tutoria_phone": "+55 (49) 2101-9100",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1pm–5pm",
+        "secretaria_email": "secretaria.cav@udesc.br",
+        "has_residencia": true,
+        "residencia_info": "CAV has a student residence hall available for low-income students. International students may apply by presenting required documentation and proof of socioeconomic need.",
+        "receita_federal": "Rua Cel. Vidal Ramos Jr, 14 — Centro, Lages/SC | Tel: (49) 3224-3005 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "ceavi",
+        "name": "CEAVI — Center of Higher Education of Alto Vale do Itajaí",
+        "city": "Ibirama/SC",
+        "address": "Rua Dr. Getúlio Vargas, 2822 — Limoeiro, Ibirama/SC — ZIP 89140-000",
+        "phone": "+55 (47) 3357-7100",
+        "website": "https://www.udesc.br/ceavi",
+        "maps": "https://maps.google.com/?q=UDESC+CEAVI+Ibirama+SC",
+        "tutoria_email": "tutoria.ceavi@udesc.br",
+        "tutoria_site": "https://www.udesc.br/ceavi/tutoria",
+        "tutoria_phone": "+55 (47) 3357-7100",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1pm–5pm",
+        "secretaria_email": "secretaria.ceavi@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua XV de Novembro, 627 — Centro, Blumenau/SC | Tel: (47) 3321-6400 | Mon-Fri 7am–1pm"
+      },
+      {
+        "id": "ceo",
+        "name": "CEO — Center of Higher Education of the West",
+        "city": "Chapecó/SC",
+        "address": "Rua Beloni Trombeta Zanin, 680E — Santo Antônio, Chapecó/SC — ZIP 89867-000",
+        "phone": "+55 (49) 2049-9500",
+        "website": "https://www.udesc.br/ceo",
+        "maps": "https://maps.google.com/?q=UDESC+CEO+Chapeco+SC",
+        "tutoria_email": "tutoria.ceo@udesc.br",
+        "tutoria_site": "https://www.udesc.br/ceo/tutoria",
+        "tutoria_phone": "+55 (49) 2049-9500",
+        "tutoria_hours": "Monday to Friday, 8am–12pm and 1pm–5pm",
+        "secretaria_email": "secretaria.ceo@udesc.br",
+        "has_residencia": false,
+        "receita_federal": "Rua Marechal Deodoro, 228 — Centro, Chapecó/SC | Tel: (49) 3311-6200 | Mon-Fri 7am–1pm"
+      }
+    ]
+  },
+
+  "systems": {
+    "header": "💻 *UDESC ACADEMIC SYSTEMS*\n\nChoose a system:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Integrated Academic Management System",
+        "detail": "📊 *SIGA — Integrated Academic Management System*\n\nSIGA is used to:\n• Check grades and absences\n• View academic transcripts\n• Access class schedules\n• Request academic documents\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID (e.g. joao.silva)\n• Institutional password\n• Active enrollment\n\n💡 First time? Use option 3 in the main menu to get your UDESC ID."
+      },
+      {
+        "id": "sigaa",
+        "name": "SIGAA",
+        "description": "Integrated Academic Activities Management System",
+        "detail": "📚 *SIGAA — Integrated Academic Activities System*\n\nSIGAA is used to:\n• Access course materials\n• Submit assignments and projects\n• Communicate with professors\n• View academic calendar and enrollment\n\n🔗 Access: https://www.sigaa.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID and institutional password\n• Active enrollment in the course (set by professor)"
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "E-learning Platform",
+        "detail": "🖥️ *Moodle UDESC — E-learning Platform*\n\nMoodle is used to:\n• Access course content and materials\n• Submit exercises and assignments\n• Participate in forums and discussions\n• Complete online quizzes and exams\n\n🔗 Access: https://moodle.udesc.br\n\n🔑 *Access requirements:*\n• Same UDESC ID and institutional password\n• Professor must add you to the class\n• Any modern web browser"
+      },
+      {
+        "id": "sas",
+        "name": "SAS",
+        "description": "Room Booking System",
+        "detail": "🏫 *SAS — Room Booking System*\n\nSAS allows you to:\n• Check room and lab availability\n• Book study spaces for group work\n• View existing reservations\n\n🔗 Access: Through your campus portal\n\n🔑 *Access requirements:*\n• UDESC ID\n• Active enrollment"
+      },
+      {
+        "id": "office365",
+        "name": "Office 365",
+        "description": "Microsoft institutional suite (email + apps)",
+        "detail": "📧 *Office 365 — Microsoft for UDESC Students*\n\nWith Office 365 you get:\n• Institutional email (@edu.udesc.br)\n• Microsoft Word, Excel, PowerPoint (online & desktop)\n• OneDrive — 1TB cloud storage\n• Microsoft Teams — video conferencing\n\n🔗 Access: https://portal.office.com\n\n🔑 *Access requirements:*\n• Login: yourID@edu.udesc.br\n• Password: same as UDESC ID\n\n💡 Your institutional email is created automatically with your UDESC ID."
+      },
+      {
+        "id": "biblioteca",
+        "name": "Online Library",
+        "description": "Digital catalog, theses and scientific journals",
+        "detail": "📖 *UDESC Online Library*\n\nThe library offers:\n• Physical books and e-books catalog\n• Repository of theses and dissertations\n• Access to scientific journals (CAPES)\n• Online loan renewals\n\n🔗 Portal: https://www.udesc.br/bibliotecas\n📚 Repository: https://repositorio.udesc.br\n\n🔑 *Requirements:*\n• Enrollment number or UDESC ID\n• For physical loans: student ID card"
+      },
+      {
+        "id": "site",
+        "name": "UDESC Website",
+        "description": "Institutional portal — courses, professors, curriculum",
+        "detail": "🌐 *UDESC Institutional Website*\n\nOn the website you can find:\n• Course curricula (PPC) for all programs\n• Information about professors and departments\n• News, events and announcements\n• Institutional contacts\n\n🔗 Website: https://www.udesc.br\n📋 Curricula: https://www.udesc.br/graduacao/ppc"
+      }
+    ]
+  },
+
+  "id_udesc": "🔐 *HOW TO GET YOUR UDESC ID*\n\nThe UDESC ID is your institutional login, valid for SIGA, SIGAA, Moodle, Office 365 and all university systems.\n\n📋 *Step by step:*\n\n1️⃣ Go to: https://estudante.udesc.br\n\n2️⃣ Click *\"First Access\"* or *\"Activate UDESC ID\"*\n\n3️⃣ Enter your *CPF* (Brazilian tax ID) and *date of birth*\n\n4️⃣ Create a password (min. 8 characters, letters and numbers)\n\n5️⃣ Confirm via your personal email registered at enrollment\n\n✅ Done! ID format: *firstname.lastname* (e.g. joao.silva)\n\n⚠️ *Requirement:* You must have a valid CPF and an active enrollment.\n\n🆘 Problems? Contact your campus tutoring team or IT:\n📧 sti@udesc.br\n🔗 https://www.udesc.br/sti/idudesc",
+
+  "cpf": "🪪 *CPF INFORMATION*\n\nThe CPF (Brazilian Individual Taxpayer ID) is *mandatory* for international students in Brazil. You'll need it to open a bank account, get a SIM card, and access government systems.\n\n📱 *How to apply online:*\n\n1️⃣ Go to: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Click *\"Register CPF\"* → *\"Foreigner residing abroad\"*\n\n3️⃣ Fill in your personal details (name, date of birth, country)\n\n4️⃣ Pay the fee of R$ 7.00 (generated on the portal)\n\n⚠️ *IMPORTANT — Mandatory in-person validation for foreigners:*\nAfter online registration, you *must appear in person* at a Receita Federal (Federal Revenue) office for validation. Bring: passport + valid visa.\n\n📍 *Receita Federal offices by city:*\n\n🏙️ *Joinville (CCT):*\nRua Visconde de Taunay, 427 — Centro\nTel: (47) 3441-5900 | Mon-Fri 7am–1pm\nhttps://maps.google.com/?q=Receita+Federal+Joinville+SC\n\n🏙️ *Florianópolis (CEFID/FAED/ESAG):*\nRua Tenente Silveira, 229 — Centro\nTel: (48) 3251-7200 | Mon-Fri 7am–1pm\nhttps://maps.google.com/?q=Receita+Federal+Florianopolis+SC\n\n🏙️ *Lages (CAV):*\nRua Cel. Vidal Ramos Jr, 14 — Centro\nTel: (49) 3224-3005 | Mon-Fri 7am–1pm\n\n🏙️ *Chapecó (CEO):*\nRua Marechal Deodoro, 228 — Centro\nTel: (49) 3311-6200 | Mon-Fri 7am–1pm",
+
+  "soe": "🎓 *STUDENT COUNSELING SERVICE (SOE)*\n\nThe SOE provides psychological, social and academic support to all UDESC students, *including international students*.\n\n📋 *Services offered:*\n• Psychological and emotional counseling\n• Academic support\n• Cultural adaptation assistance\n• Healthcare referrals\n• Social vulnerability support\n\n🕐 *Opening hours:*\nMonday to Friday, 8am to 6pm\n(check specific hours at your campus)\n\n🔗 *Website:* https://www.udesc.br/soe\n📧 *Email:* soe@udesc.br\n\n📍 *Location:*\nThe SOE operates at each campus. Ask at your campus secretariat for the exact location.\n\n💡 The SOE is especially helpful for international students adapting to life in Brazil.",
+
+  "residencia": {
+    "header": "🏠 *STUDENT HOUSING*\n\nHousing availability varies by campus. Select yours:\n\n",
+    "not_available": "🏠 *Student Housing — {center}*\n\nThis campus does *not* have its own student residence hall.\n\n💡 *Housing alternatives:*\n• Student houses (shared housing)\n• Studios and apartments near campus\n• UDESC student groups on WhatsApp\n• The tutoring team can help with recommendations\n\n📞 Contact your campus tutoring team for nearby, safe housing options.",
+    "available_template": "🏠 *Student Housing — {center}*\n\n✅ *This campus has student housing available!*\n\n{residencia_info}\n\n📞 *For more information and applications:*\n{tutoria_contact}"
+  },
+
+  "faq": {
+    "header": "❓ *FAQ — FREQUENTLY ASKED QUESTIONS*\n\nChoose a category:\n\n1️⃣  University Restaurant\n2️⃣  Transportation\n3️⃣  Wi-Fi Internet\n4️⃣  Printing\n5️⃣  Banks & Currency Exchange\n6️⃣  SIM Card\n7️⃣  Housing\n",
+    "items": {
+      "ru": "🍽️ *UNIVERSITY RESTAURANT*\n\nSome UDESC campuses have a cafeteria or partnerships with nearby restaurants.\n\n🏛️ *CCT — Joinville:*\nStudent cafeteria with subsidized prices for enrolled students.\nHours: 11am to 2pm (lunch)\n\n💡 Check with your campus tutoring team for updated hours and prices.\n\n🔗 Student Assistance: https://www.udesc.br/assistenciaestudantil",
+      "transporte": "🚌 *TRANSPORTATION*\n\n🚍 *City buses:*\n• Joinville: https://www.gttransjoinville.com.br\n• Florianópolis: https://www.consorciofloripa.com.br\n\n📱 *Ride-sharing apps:*\n• Uber: https://www.uber.com/br\n• 99: https://www.99app.com\n\n🎓 *Student transit discount (half fare):*\nEnrolled students are entitled to half-price public transit. Apply at your campus secretariat with your enrollment proof.\n\n✈️ *Nearest airports:*\n• Joinville: Lauro Carneiro de Loyola Airport\n• Florianópolis: Hercílio Luz Airport\n• Lages: Antônio Correia Pinto de Macedo Airport",
+      "wifi": "📶 *WI-FI INTERNET*\n\n✅ *UDESC Network:*\nAll campuses offer free Wi-Fi for students.\n\n🌍 *Eduroam Network:*\nUDESC is part of the Eduroam network — connect at universities worldwide using your institutional login!\n\n📱 *How to connect:*\n1️⃣ Select network *UDESC* or *eduroam*\n2️⃣ Login: yourID@udesc.br\n3️⃣ Password: your UDESC ID password\n\n🔗 More info: https://www.udesc.br/sti/redes",
+      "impressao": "🖨️ *PRINTING*\n\n📄 *On campus:*\nSome campuses offer printing services for students. Check with the secretariat or tutoring team about prices and availability.\n\n🏪 *Nearby print shops:*\nThere are print and copy shops near all campuses. The tutoring team can recommend affordable options.\n\n💡 *Tip:* Use OneDrive (Office 365) to save and access your files from any university computer.",
+      "bancos": "🏦 *BANKS & CURRENCY EXCHANGE*\n\n🏧 *Major Brazilian banks:*\nBanco do Brasil, Caixa, Bradesco, Itaú and Santander have branches in all UDESC cities.\n\n📱 *Digital banks (easiest for foreigners):*\n• Nubank: https://nubank.com.br\n• Inter: https://bancointer.com.br\n• C6 Bank: https://c6bank.com.br\n\n💡 Digital banks usually open accounts with just a CPF and selfie — no guarantor required!\n\n📋 *Documents for a traditional bank account:*\n• Valid CPF (validated in person)\n• Passport\n• Proof of address\n• Student visa\n\n💱 *International transfers:*\n• Wise: https://wise.com (best exchange rates)\n• Currency exchange offices in city centers",
+      "chip": "📱 *SIM CARD*\n\n📋 *Required documents:*\n• CPF (mandatory!)\n• Passport\n\n📡 *Main carriers:*\n• Claro: https://www.claro.com.br\n• Vivo: https://www.vivo.com.br\n• TIM: https://www.tim.com.br\n• Oi: https://www.oi.com.br\n\n💡 *Tip for international students:*\nBuy a *prepaid SIM* first — no proof of address required!\nSIM cards are sold at carrier stores, pharmacies and supermarkets.\n\n📶 Joinville and Florianópolis have excellent 4G/5G coverage from all carriers.",
+      "moradia": "🏠 *HOUSING*\n\n🏘️ *Types of housing:*\n• *Student house (república):* Shared house — most affordable option\n• *Studio (kitnet):* Individual unit with small kitchen\n• *Shared apartment:* 2-3 people splitting rent\n\n📱 *Where to search:*\n• OLX: https://www.olx.com.br\n• Quinto Andar: https://www.quintoandar.com.br\n• UDESC student groups on Facebook/WhatsApp\n\n📞 *The tutoring team can help:*\nThey usually have lists of nearby properties and can recommend safe neighborhoods.\n\n💰 *Average prices (Joinville — CCT):*\n• Room in shared house: R$ 500–900/month\n• Studio: R$ 700–1,300/month\n• Shared apartment (per person): R$ 600–1,000/month\n\n⚠️ Rentals usually require a Brazilian guarantor or rental insurance."
+    }
+  },
+
+  "emergency": "🚨 *EMERGENCY CONTACTS*\n\n📞 *Call now:*\n🚓 Military Police: *190*\n🚑 SAMU (Ambulance): *192*\n🚒 Fire Department: *193*\n📞 Emergency Central: *199*\n\n🏥 *Hospitals by city:*\n• Joinville: Hospital Municipal São José — (47) 3461-9000\n• Florianópolis: University Hospital (HU-UFSC) — (48) 3721-9100\n• Lages: Hospital de Caridade — (49) 3221-2700\n• Chapecó: Hospital Regional do Oeste — (49) 3323-2666\n\n🚖 *Emergency transport:*\n• Uber: Uber app\n• 99: 99 app\n• Joinville Taxi: (47) 3433-9500\n\n🛂 *Immigration/consular issues:*\n• Federal Police: https://www.gov.br/pf/pt-br\n• Ministry of Foreign Affairs: https://www.gov.br/mre\n\n⚠️ *For medical emergencies, call 192 (SAMU) immediately!*"
+}
