@@ -1,7 +1,7 @@
 {
   "welcome": "🎓 *Olá! Bem-vindo(a) ao ChatBot da UDESC!*\n\nEste assistente foi criado para auxiliar estudantes estrangeiros em intercâmbio na Universidade do Estado de Santa Catarina.\n\n🌐 *Hello! Welcome to UDESC ChatBot!*\nThis assistant was created to help international exchange students.\n\n━━━━━━━━━━━━━━━━━━━━\n*Escolha seu idioma / Choose your language:*\n1️⃣  Português\n2️⃣  English",
 
-  "main_menu": "📋 *MENU PRINCIPAL — UDESC*\n\nDigite o número da opção:\n\n1️⃣  Endereços dos Centros UDESC\n2️⃣  Sistemas Acadêmicos\n3️⃣  Como obter o ID UDESC\n4️⃣  Informações sobre CPF\n5️⃣  Tutoria Acadêmica\n6️⃣  Serviço de Orientação ao Estudante (SOE)\n7️⃣  Residência Estudantil\n8️⃣  FAQ — Perguntas Frequentes\n9️⃣  Contatos de Emergência\n0️⃣  Encerrar conversa\n\n💡 A qualquer momento: *menu* → início  |  *voltar* → anterior  |  *sair* → encerrar",
+  "main_menu": "📋 *MENU PRINCIPAL — UDESC*\n\nDigite o número da opção:\n\n1️⃣  Endereços dos Centros UDESC\n2️⃣  Sistemas que você vai utilizar (SIGA, Moodle, SIGAA)\n3️⃣  Como obter o ID UDESC\n4️⃣  Sistemas UDESC — para que serve cada um\n5️⃣  Informações sobre CPF\n6️⃣  Tutoria Acadêmica\n7️⃣  Serviço de Orientação ao Estudante (SOE)\n8️⃣  Residência Estudantil\n9️⃣  FAQ — Perguntas Frequentes\n🔟  Contatos de Emergência\n0️⃣  Encerrar conversa\n\n💡 A qualquer momento: *menu* → início  |  *voltar* → anterior  |  *sair* → encerrar",
 
   "invalid_option": "❌ Opção inválida. Digite um número do menu ou *menu* para ver as opções.",
 
@@ -128,20 +128,38 @@
     ]
   },
 
-  "systems": {
-    "header": "💻 *SISTEMAS ACADÊMICOS DA UDESC*\n\nEscolha o sistema:\n\n",
+  "systems_access": {
+    "header": "💻 *SISTEMAS QUE VOCÊ VAI UTILIZAR*\n\nNo dia a dia acadêmico da UDESC você usará principalmente o *SIGA*, o *Moodle* e o *SIGAA*.\n\nEscolha um sistema para ver os *requisitos de acesso*:\n\n",
     "items": [
       {
         "id": "siga",
         "name": "SIGA",
         "description": "Sistema Integrado de Gestão Acadêmica",
-        "detail": "📊 *SIGA — Sistema Integrado de Gestão Acadêmica*\n\nO SIGA é utilizado para:\n• Consultar notas e faltas\n• Verificar histórico escolar\n• Acessar grade horária\n• Solicitar documentos (declarações, histórico)\n\n🔗 Acesso: https://www.siga.udesc.br\n\n🔑 *Requisitos de acesso:*\n• ID UDESC (ex: nome.sobrenome)\n• Senha cadastrada no sistema\n• Matrícula ativa\n\n💡 Primeira vez? Use a opção 3 do menu para obter seu ID UDESC."
+        "detail": "📊 *SIGA — Requisitos de acesso*\n\n🔗 Acesso: https://www.siga.udesc.br\n\n🔑 *Para acessar você precisa de:*\n• *ID UDESC* (formato: nome.sobrenome) — veja a opção 3 do menu\n• Senha institucional cadastrada\n• Matrícula ativa na UDESC\n• CPF válido (necessário para criar o ID UDESC)\n\n💡 O SIGA é onde você consulta notas, faltas e solicita documentos."
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "Plataforma de Ensino a Distância",
+        "detail": "🖥️ *Moodle — Requisitos de acesso*\n\n🔗 Acesso: https://moodle.udesc.br\n\n🔑 *Para acessar você precisa de:*\n• *ID UDESC* e senha institucional — veja a opção 3 do menu\n• Ser adicionado à turma pelo professor da disciplina\n• Qualquer navegador moderno\n\n💡 O Moodle é onde ficam os materiais das disciplinas e a postagem de exercícios."
       },
       {
         "id": "sigaa",
         "name": "SIGAA",
         "description": "Sistema Integrado de Gestão de Atividades Acadêmicas",
-        "detail": "📚 *SIGAA — Sistema Integrado de Gestão de Atividades Acadêmicas*\n\nO SIGAA é utilizado para:\n• Acessar materiais das disciplinas\n• Enviar trabalhos e atividades\n• Comunicar-se com professores\n• Ver calendário acadêmico e turmas\n\n🔗 Acesso: https://www.sigaa.udesc.br\n\n🔑 *Requisitos de acesso:*\n• ID UDESC\n• Senha institucional\n• Cadastro ativo na disciplina (feito pelo professor)"
+        "detail": "📚 *SIGAA — Requisitos de acesso*\n\n🔗 Acesso: https://www.sigaa.udesc.br\n\n🔑 *Para acessar você precisa de:*\n• *ID UDESC* e senha institucional — veja a opção 3 do menu\n• Cadastro ativo na disciplina (feito pelo professor)\n\n💡 O SIGAA é usado para atividades acadêmicas, comunicação com professores e calendário."
+      }
+    ]
+  },
+
+  "systems": {
+    "header": "💻 *SISTEMAS UDESC*\n\nConheça para que serve cada sistema da universidade. Escolha uma opção:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Notas, faltas e documentos acadêmicos",
+        "detail": "📊 *SIGA — Sistema Integrado de Gestão Acadêmica*\n\nO SIGA é utilizado para:\n• Consultar *notas e faltas*\n• Verificar histórico escolar\n• Acessar grade horária\n• Solicitar documentos (declarações, histórico)\n\n🔗 Acesso: https://www.siga.udesc.br\n\n🔑 *Requisitos de acesso:*\n• ID UDESC (ex: nome.sobrenome)\n• Senha cadastrada no sistema\n• Matrícula ativa\n\n💡 Primeira vez? Use a opção 3 do menu para obter seu ID UDESC."
       },
       {
         "id": "moodle",
@@ -178,7 +196,10 @@
 
   "id_udesc": "🔐 *COMO OBTER O ID UDESC*\n\nO ID UDESC é seu login institucional, válido para SIGA, SIGAA, Moodle, Office 365 e todos os sistemas da universidade.\n\n📋 *Passo a passo:*\n\n1️⃣ Acesse: https://estudante.udesc.br\n\n2️⃣ Clique em *\"Primeiro Acesso\"* ou *\"Ativar ID UDESC\"*\n\n3️⃣ Informe seu *CPF* e *data de nascimento*\n\n4️⃣ Crie uma senha (mínimo 8 caracteres, letras e números)\n\n5️⃣ Confirme pelo e-mail pessoal cadastrado na matrícula\n\n✅ Pronto! Formato do ID: *nome.sobrenome* (ex: joao.silva)\n\n⚠️ *Requisito:* Você precisa ter um CPF válido e matrícula ativa.\n\n🆘 Problemas? Contate a tutoria do seu centro ou a STI:\n📧 sti@udesc.br\n🔗 https://www.udesc.br/sti/idudesc",
 
-  "cpf": "🪪 *INFORMAÇÕES SOBRE CPF*\n\nO CPF (Cadastro de Pessoa Física) é *obrigatório* para estudantes estrangeiros no Brasil. Você precisará dele para abrir conta bancária, obter chip de celular e acessar sistemas do governo.\n\n📱 *Como solicitar online:*\n\n1️⃣ Acesse: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Clique em *\"Cadastrar CPF\"* → *\"Estrangeiro residente no exterior\"*\n\n3️⃣ Preencha seus dados pessoais (nome, data de nascimento, país)\n\n4️⃣ Pague a taxa de R$ 7,00 (gerada no portal)\n\n⚠️ *ATENÇÃO — Validação presencial obrigatória para estrangeiros:*\nApós o cadastro online, você *deve comparecer pessoalmente* a uma agência da Receita Federal para validar. Leve: passaporte + visto válido.\n\n📍 *Receita Federal por cidade:*\n\n🏙️ *Joinville (CCT):*\nRua Visconde de Taunay, 427 — Centro\nTel: (47) 3441-5900 | Seg-Sex 07h–13h\nhttps://maps.google.com/?q=Receita+Federal+Joinville+SC\n\n🏙️ *Florianópolis (CEFID/FAED/ESAG):*\nRua Tenente Silveira, 229 — Centro\nTel: (48) 3251-7200 | Seg-Sex 07h–13h\nhttps://maps.google.com/?q=Receita+Federal+Florianopolis+SC\n\n🏙️ *Lages (CAV):*\nRua Cel. Vidal Ramos Jr, 14 — Centro\nTel: (49) 3224-3005 | Seg-Sex 07h–13h\n\n🏙️ *Chapecó (CEO):*\nRua Marechal Deodoro, 228 — Centro\nTel: (49) 3311-6200 | Seg-Sex 07h–13h",
+  "cpf": {
+    "header": "🪪 *INFORMAÇÕES SOBRE CPF*\n\nO CPF (Cadastro de Pessoa Física) é *obrigatório* para estudantes estrangeiros no Brasil. Você precisará dele para abrir conta bancária, obter chip de celular, criar o ID UDESC e acessar sistemas do governo.\n\n📱 *Como solicitar online:*\n\n1️⃣ Acesse: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Clique em *\"Cadastrar CPF\"* → *\"Estrangeiro\"*\n\n3️⃣ Preencha seus dados pessoais (nome, data de nascimento, país)\n\n4️⃣ Pague a taxa de R$ 7,00 (gerada no portal)\n\n⚠️ *ATENÇÃO — Validação presencial obrigatória:*\nApós o cadastro online, o estrangeiro *deve se apresentar pessoalmente* em uma agência da Receita Federal para validar o CPF. Leve: passaporte + visto válido.\n\n📍 Para eu informar a agência da Receita Federal *mais próxima do seu centro*, digite o número do centro onde você estuda:\n\n",
+    "detail_template": "🪪 *Validação presencial do CPF — {center}*\n\nCom base no centro onde você está ({city}), a agência da Receita Federal mais próxima é:\n\n📍 *{receita}*\n\n📄 *Leve com você:*\n• Passaporte\n• Visto válido\n• Protocolo do cadastro online\n\n💡 Após validar o CPF, você já pode criar seu ID UDESC (opção 3 do menu)."
+  },
 
   "soe": "🎓 *SERVIÇO DE ORIENTAÇÃO AO ESTUDANTE (SOE)*\n\nO SOE oferece apoio psicológico, social e pedagógico a todos os estudantes da UDESC, *incluindo estrangeiros*.\n\n📋 *Serviços:*\n• Atendimento psicológico e emocional\n• Apoio em dificuldades acadêmicas\n• Auxílio na adaptação cultural ao Brasil\n• Encaminhamento para serviços de saúde\n• Apoio em situações de vulnerabilidade social\n\n🕐 *Horário de atendimento:*\nSegunda a sexta, 08h às 18h\n(verifique o horário específico do seu centro)\n\n🔗 *Site:* https://www.udesc.br/soe\n📧 *E-mail:* soe@udesc.br\n\n📍 *Localização:*\nO SOE funciona em cada centro. Pergunte na secretaria do seu centro onde fica o atendimento.\n\n💡 O SOE pode ajudar especialmente com a adaptação cultural ao Brasil e à UDESC.",
 

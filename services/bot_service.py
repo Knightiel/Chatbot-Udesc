@@ -27,22 +27,23 @@ _NAV = {
 # Mapeamento estado → chave JSON para conteúdo estático
 _STATIC_CONTENT: Dict[str, str] = {
     "ID_UDESC": "id_udesc",
-    "CPF_INFO": "cpf",
     "SOE": "soe",
     "EMERGENCY": "emergency",
 }
 
 # Opções do menu principal → (próximo estado, chave estática ou None)
+# Numeração espelha a Tabela 1 do trabalho (itens 1 a 8) + extras (9 e 10)
 _MAIN_MENU_OPTIONS: Dict[str, tuple] = {
     "1": ("CENTERS_LIST", None),
-    "2": ("SYSTEMS_MENU", None),
+    "2": ("SYSTEMS_ACCESS_MENU", None),
     "3": ("ID_UDESC", "id_udesc"),
-    "4": ("CPF_INFO", "cpf"),
-    "5": ("TUTORIA_SELECT", None),
-    "6": ("SOE", "soe"),
-    "7": ("RESIDENCIA_SELECT", None),
-    "8": ("FAQ_MENU", None),
-    "9": ("EMERGENCY", "emergency"),
+    "4": ("SYSTEMS_MENU", None),
+    "5": ("CPF_SELECT", None),
+    "6": ("TUTORIA_SELECT", None),
+    "7": ("SOE", "soe"),
+    "8": ("RESIDENCIA_SELECT", None),
+    "9": ("FAQ_MENU", None),
+    "10": ("EMERGENCY", "emergency"),
     "0": ("ENDED", None),
 }
 
@@ -144,10 +145,13 @@ class BotService:
             "MAIN_MENU": self._handle_main_menu,
             "CENTERS_LIST": self._handle_centers_list,
             "CENTER_DETAIL": self._handle_center_detail,
+            "SYSTEMS_ACCESS_MENU": self._handle_systems_access_menu,
+            "SYSTEMS_ACCESS_DETAIL": self._handle_system_detail,
             "SYSTEMS_MENU": self._handle_systems_menu,
             "SYSTEM_DETAIL": self._handle_system_detail,
             "ID_UDESC": self._handle_static,
-            "CPF_INFO": self._handle_static,
+            "CPF_SELECT": self._handle_cpf_select,
+            "CPF_DETAIL": self._handle_cpf_detail,
             "TUTORIA_SELECT": self._handle_tutoria_select,
             "TUTORIA_DETAIL": self._handle_tutoria_detail,
             "SOE": self._handle_static,
@@ -261,13 +265,37 @@ class BotService:
         )
 
     # --- Sistemas ---
+    # Dois menus distintos (Tabela 1, itens 2 e 4):
+    #   systems_access → SIGA/Moodle/SIGAA com requisitos de acesso (item 2)
+    #   systems        → todos os sistemas UDESC e sua finalidade (item 4)
+
+    def _handle_systems_access_menu(
+        self, user_id: str, session: Session, msg: str
+    ) -> str:
+        return self._systems_list(
+            user_id, session, msg, "systems_access",
+            "SYSTEMS_ACCESS_MENU", "SYSTEMS_ACCESS_DETAIL",
+        )
 
     def _handle_systems_menu(self, user_id: str, session: Session, msg: str) -> str:
+        return self._systems_list(
+            user_id, session, msg, "systems", "SYSTEMS_MENU", "SYSTEM_DETAIL"
+        )
+
+    def _systems_list(
+        self,
+        user_id: str,
+        session: Session,
+        msg: str,
+        json_key: str,
+        list_state: str,
+        detail_state: str,
+    ) -> str:
         lang = session.language or "pt"
-        systems = self.m(lang, "systems.items")
+        systems = self.m(lang, f"{json_key}.items")
 
         if not msg:
-            header = self.m(lang, "systems.header")
+            header = self.m(lang, f"{json_key}.header")
             items = "\n".join(
                 f"{i + 1}️⃣  *{s['name']}* — {s['description']}"
                 for i, s in enumerate(systems)
@@ -278,9 +306,9 @@ class BotService:
             idx = int(msg.strip()) - 1
             if 0 <= idx < len(systems):
                 system = systems[idx]
-                session.previous_state = "SYSTEMS_MENU"
-                session.state = "SYSTEM_DETAIL"
-                session.context = {"system_id": system["id"]}
+                session.previous_state = list_state
+                session.state = detail_state
+                session.context = {"system_id": system["id"], "system_key": json_key}
                 return system["detail"] + self.m(lang, "navigation_hint")
         except ValueError:
             pass
@@ -288,17 +316,68 @@ class BotService:
         return (
             self.m(lang, "invalid_option")
             + "\n\n"
-            + self._handle_systems_menu(user_id, session, "")
+            + self._systems_list(user_id, session, "", json_key, list_state, detail_state)
         )
 
     def _handle_system_detail(self, user_id: str, session: Session, msg: str) -> str:
         lang = session.language or "pt"
-        systems = self.m(lang, "systems.items")
+        json_key = session.context.get("system_key", "systems")
+        systems = self.m(lang, f"{json_key}.items")
         sid = session.context.get("system_id")
         system = next((s for s in systems if s["id"] == sid), None)
         if system:
             return system["detail"] + self.m(lang, "navigation_hint")
         return self._handle_systems_menu(user_id, session, "")
+
+    # --- CPF (Tabela 1, item 5) ---
+    # Informa como obter o CPF online e, com base no centro escolhido,
+    # oferece o endereço da Receita Federal para a validação presencial.
+
+    def _handle_cpf_select(self, user_id: str, session: Session, msg: str) -> str:
+        lang = session.language or "pt"
+        centers = self.m(lang, "centers.items")
+
+        if not msg:
+            header = self.m(lang, "cpf.header")
+            items = "\n".join(
+                f"{i + 1}️⃣  {c['name']} — {c['city']}" for i, c in enumerate(centers)
+            )
+            return header + items + self.m(lang, "navigation_hint")
+
+        try:
+            idx = int(msg.strip()) - 1
+            if 0 <= idx < len(centers):
+                center = centers[idx]
+                session.previous_state = "CPF_SELECT"
+                session.state = "CPF_DETAIL"
+                session.context = {"center_id": center["id"]}
+                return self._format_cpf(center, lang)
+        except ValueError:
+            pass
+
+        return (
+            self.m(lang, "invalid_option")
+            + "\n\n"
+            + self._handle_cpf_select(user_id, session, "")
+        )
+
+    def _handle_cpf_detail(self, user_id: str, session: Session, msg: str) -> str:
+        lang = session.language or "pt"
+        centers = self.m(lang, "centers.items")
+        cid = session.context.get("center_id")
+        center = next((c for c in centers if c["id"] == cid), None)
+        if center:
+            return self._format_cpf(center, lang)
+        return self._handle_cpf_select(user_id, session, "")
+
+    def _format_cpf(self, c: Dict, lang: str) -> str:
+        tmpl = self.m(lang, "cpf.detail_template")
+        return (
+            tmpl.format(
+                center=c["name"], city=c["city"], receita=c["receita_federal"]
+            )
+            + self.m(lang, "navigation_hint")
+        )
 
     # --- Tutoria ---
 

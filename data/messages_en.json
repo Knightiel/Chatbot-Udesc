@@ -1,7 +1,7 @@
 {
   "welcome": "🎓 *Hello! Welcome to UDESC ChatBot!*\n\nThis assistant was created to help international exchange students at the State University of Santa Catarina.\n\n━━━━━━━━━━━━━━━━━━━━\n*Choose your language / Escolha seu idioma:*\n1️⃣  Português\n2️⃣  English",
 
-  "main_menu": "📋 *MAIN MENU — UDESC*\n\nType the option number:\n\n1️⃣  UDESC Campus Addresses\n2️⃣  Academic Systems\n3️⃣  How to Get Your UDESC ID\n4️⃣  CPF Information\n5️⃣  Academic Tutoring\n6️⃣  Student Counseling Service (SOE)\n7️⃣  Student Housing\n8️⃣  FAQ — Frequently Asked Questions\n9️⃣  Emergency Contacts\n0️⃣  End conversation\n\n💡 Anytime: *menu* → home  |  *back* → previous  |  *exit* → quit",
+  "main_menu": "📋 *MAIN MENU — UDESC*\n\nType the option number:\n\n1️⃣  UDESC Campus Addresses\n2️⃣  Systems You Will Use (SIGA, Moodle, SIGAA)\n3️⃣  How to Get Your UDESC ID\n4️⃣  UDESC Systems — what each one is for\n5️⃣  CPF Information\n6️⃣  Academic Tutoring\n7️⃣  Student Counseling Service (SOE)\n8️⃣  Student Housing\n9️⃣  FAQ — Frequently Asked Questions\n🔟  Emergency Contacts\n0️⃣  End conversation\n\n💡 Anytime: *menu* → home  |  *back* → previous  |  *exit* → quit",
 
   "invalid_option": "❌ Invalid option. Type a number from the menu or *menu* to see options.",
 
@@ -128,20 +128,38 @@
     ]
   },
 
-  "systems": {
-    "header": "💻 *UDESC ACADEMIC SYSTEMS*\n\nChoose a system:\n\n",
+  "systems_access": {
+    "header": "💻 *SYSTEMS YOU WILL USE*\n\nIn your daily academic life at UDESC you will mainly use *SIGA*, *Moodle* and *SIGAA*.\n\nChoose a system to see its *access requirements*:\n\n",
     "items": [
       {
         "id": "siga",
         "name": "SIGA",
         "description": "Integrated Academic Management System",
-        "detail": "📊 *SIGA — Integrated Academic Management System*\n\nSIGA is used to:\n• Check grades and absences\n• View academic transcripts\n• Access class schedules\n• Request academic documents\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID (e.g. joao.silva)\n• Institutional password\n• Active enrollment\n\n💡 First time? Use option 3 in the main menu to get your UDESC ID."
+        "detail": "📊 *SIGA — Access requirements*\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* (format: firstname.lastname) — see option 3 in the menu\n• Registered institutional password\n• Active enrollment at UDESC\n• Valid CPF (required to create your UDESC ID)\n\n💡 SIGA is where you check grades, absences and request documents."
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "E-learning Platform",
+        "detail": "🖥️ *Moodle — Access requirements*\n\n🔗 Access: https://moodle.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• To be added to the class by the course professor\n• Any modern web browser\n\n💡 Moodle is where course materials and assignment submissions live."
       },
       {
         "id": "sigaa",
         "name": "SIGAA",
         "description": "Integrated Academic Activities Management System",
-        "detail": "📚 *SIGAA — Integrated Academic Activities System*\n\nSIGAA is used to:\n• Access course materials\n• Submit assignments and projects\n• Communicate with professors\n• View academic calendar and enrollment\n\n🔗 Access: https://www.sigaa.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID and institutional password\n• Active enrollment in the course (set by professor)"
+        "detail": "📚 *SIGAA — Access requirements*\n\n🔗 Access: https://www.sigaa.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• Active enrollment in the course (set by the professor)\n\n💡 SIGAA is used for academic activities, communication with professors and the calendar."
+      }
+    ]
+  },
+
+  "systems": {
+    "header": "💻 *UDESC SYSTEMS*\n\nLearn what each university system is for. Choose an option:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Grades, absences and academic documents",
+        "detail": "📊 *SIGA — Integrated Academic Management System*\n\nSIGA is used to:\n• Check *grades and absences*\n• View academic transcripts\n• Access class schedules\n• Request academic documents\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID (e.g. joao.silva)\n• Institutional password\n• Active enrollment\n\n💡 First time? Use option 3 in the main menu to get your UDESC ID."
       },
       {
         "id": "moodle",
@@ -178,7 +196,10 @@
 
   "id_udesc": "🔐 *HOW TO GET YOUR UDESC ID*\n\nThe UDESC ID is your institutional login, valid for SIGA, SIGAA, Moodle, Office 365 and all university systems.\n\n📋 *Step by step:*\n\n1️⃣ Go to: https://estudante.udesc.br\n\n2️⃣ Click *\"First Access\"* or *\"Activate UDESC ID\"*\n\n3️⃣ Enter your *CPF* (Brazilian tax ID) and *date of birth*\n\n4️⃣ Create a password (min. 8 characters, letters and numbers)\n\n5️⃣ Confirm via your personal email registered at enrollment\n\n✅ Done! ID format: *firstname.lastname* (e.g. joao.silva)\n\n⚠️ *Requirement:* You must have a valid CPF and an active enrollment.\n\n🆘 Problems? Contact your campus tutoring team or IT:\n📧 sti@udesc.br\n🔗 https://www.udesc.br/sti/idudesc",
 
-  "cpf": "🪪 *CPF INFORMATION*\n\nThe CPF (Brazilian Individual Taxpayer ID) is *mandatory* for international students in Brazil. You'll need it to open a bank account, get a SIM card, and access government systems.\n\n📱 *How to apply online:*\n\n1️⃣ Go to: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Click *\"Register CPF\"* → *\"Foreigner residing abroad\"*\n\n3️⃣ Fill in your personal details (name, date of birth, country)\n\n4️⃣ Pay the fee of R$ 7.00 (generated on the portal)\n\n⚠️ *IMPORTANT — Mandatory in-person validation for foreigners:*\nAfter online registration, you *must appear in person* at a Receita Federal (Federal Revenue) office for validation. Bring: passport + valid visa.\n\n📍 *Receita Federal offices by city:*\n\n🏙️ *Joinville (CCT):*\nRua Visconde de Taunay, 427 — Centro\nTel: (47) 3441-5900 | Mon-Fri 7am–1pm\nhttps://maps.google.com/?q=Receita+Federal+Joinville+SC\n\n🏙️ *Florianópolis (CEFID/FAED/ESAG):*\nRua Tenente Silveira, 229 — Centro\nTel: (48) 3251-7200 | Mon-Fri 7am–1pm\nhttps://maps.google.com/?q=Receita+Federal+Florianopolis+SC\n\n🏙️ *Lages (CAV):*\nRua Cel. Vidal Ramos Jr, 14 — Centro\nTel: (49) 3224-3005 | Mon-Fri 7am–1pm\n\n🏙️ *Chapecó (CEO):*\nRua Marechal Deodoro, 228 — Centro\nTel: (49) 3311-6200 | Mon-Fri 7am–1pm",
+  "cpf": {
+    "header": "🪪 *CPF INFORMATION*\n\nThe CPF (Brazilian Individual Taxpayer ID) is *mandatory* for international students in Brazil. You'll need it to open a bank account, get a SIM card, create your UDESC ID and access government systems.\n\n📱 *How to apply online:*\n\n1️⃣ Go to: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Click *\"Register CPF\"* → *\"Foreigner\"*\n\n3️⃣ Fill in your personal details (name, date of birth, country)\n\n4️⃣ Pay the fee of R$ 7.00 (generated on the portal)\n\n⚠️ *IMPORTANT — Mandatory in-person validation:*\nAfter online registration, foreigners *must appear in person* at a Receita Federal (Federal Revenue) office to validate the CPF. Bring: passport + valid visa.\n\n📍 So I can tell you the Receita Federal office *closest to your campus*, type the number of the campus where you study:\n\n",
+    "detail_template": "🪪 *CPF in-person validation — {center}*\n\nBased on the campus where you are ({city}), the nearest Receita Federal office is:\n\n📍 *{receita}*\n\n📄 *Bring with you:*\n• Passport\n• Valid visa\n• Online registration receipt\n\n💡 Once your CPF is validated, you can create your UDESC ID (option 3 in the menu)."
+  },
 
   "soe": "🎓 *STUDENT COUNSELING SERVICE (SOE)*\n\nThe SOE provides psychological, social and academic support to all UDESC students, *including international students*.\n\n📋 *Services offered:*\n• Psychological and emotional counseling\n• Academic support\n• Cultural adaptation assistance\n• Healthcare referrals\n• Social vulnerability support\n\n🕐 *Opening hours:*\nMonday to Friday, 8am to 6pm\n(check specific hours at your campus)\n\n🔗 *Website:* https://www.udesc.br/soe\n📧 *Email:* soe@udesc.br\n\n📍 *Location:*\nThe SOE operates at each campus. Ask at your campus secretariat for the exact location.\n\n💡 The SOE is especially helpful for international students adapting to life in Brazil.",
 

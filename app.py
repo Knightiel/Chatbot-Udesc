@@ -14,6 +14,7 @@ from flask import Flask
 
 from config.settings import settings
 from controllers.telegram_controller import run_telegram_bot
+from routes.web_routes import web_bp
 from routes.whatsapp_routes import whatsapp_bp
 from utils.logger import get_logger
 from utils.network_info import print_network_summary
@@ -22,6 +23,7 @@ logger = get_logger(__name__)
 
 app = Flask(__name__)
 app.secret_key = settings.SECRET_KEY
+app.register_blueprint(web_bp)
 app.register_blueprint(whatsapp_bp)
 
 
@@ -48,6 +50,7 @@ if __name__ == "__main__":
         logger.warning("[APP] TWILIO_ACCOUNT_SID não definido — webhook WhatsApp inativo.")
 
     logger.info(f"[APP] Flask iniciando na porta {settings.PORT}...")
+    logger.info(f"[APP] Interface web:    GET  http://0.0.0.0:{settings.PORT}/")
     logger.info(f"[APP] Webhook WhatsApp: POST http://0.0.0.0:{settings.PORT}/whatsapp")
     logger.info(f"[APP] Health check:     GET  http://0.0.0.0:{settings.PORT}/health")
 

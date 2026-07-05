@@ -9,26 +9,36 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 from config.settings import settings
 from services.bot_service import bot_service
+from utils.anonymizer import anonymize_user_id
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
 
+async def _reply(update: Update, text: str) -> None:
+    """Envia resposta em Markdown, com fallback em texto puro."""
+    try:
+        await update.message.reply_text(text, parse_mode="Markdown")
+    except Exception:
+        await update.message.reply_text(text)
+
+
 async def _handle_start(update: Update, context) -> None:
     """Comando /start — inicia ou reinicia a conversa."""
-    user_id = str(update.effective_chat.id)
+    # Uso anônimo: o chat ID real nunca é armazenado nem logado
+    user_id = anonymize_user_id(f"telegram:{update.effective_chat.id}")
     logger.info(f"[TELEGRAM] /start de user={user_id}")
     response = bot_service.process_message(user_id, "start", "telegram")
-    await update.message.reply_text(response, parse_mode="Markdown")
+    await _reply(update, response)
 
 
 async def _handle_message(update: Update, context) -> None:
     """Processa mensagens de texto recebidas."""
-    user_id = str(update.effective_chat.id)
+    user_id = anonymize_user_id(f"telegram:{update.effective_chat.id}")
     text = update.message.text or ""
     logger.info(f"[TELEGRAM] user={user_id} | mensagem={text[:80]!r}")
     response = bot_service.process_message(user_id, text, "telegram")
-    await update.message.reply_text(response, parse_mode="Markdown")
+    await _reply(update, response)
 
 
 def run_telegram_bot() -> None:
