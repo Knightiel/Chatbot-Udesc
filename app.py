@@ -3,17 +3,19 @@ import threading
 
 from dotenv import load_dotenv
 from flask import Flask
+from controllers.telegram_controller import run_telegram_bot
+from routes.whatsapp_routes import whatsapp_bp
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
-from controllers.telegram_controller import run_telegram_bot
-from routes.whatsapp_routes import whatsapp_bp
 
 app = Flask(__name__)
 app.register_blueprint(whatsapp_bp)
 
 
+# Inicia a thread para o bot Telegram
 def _start_telegram_thread() -> None:
     try:
         run_telegram_bot()
@@ -28,8 +30,5 @@ if __name__ == "__main__":
         t.start()
     else:
         print("TELEGRAM_TOKEN não definido — bot Telegram desativado.")
-
-    if not os.getenv("TWILIO_ACCOUNT_SID"):
-        print("TWILIO_ACCOUNT_SID não definido — webhook WhatsApp desativado.")
 
     app.run(host="0.0.0.0", port=5000, debug=False, use_reloader=False)

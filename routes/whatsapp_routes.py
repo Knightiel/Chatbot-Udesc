@@ -11,7 +11,7 @@ def whatsapp_webhook():
     return handle_whatsapp(request), 200, {"Content-Type": "text/xml"}
 
 
-@whatsapp_bp.route("/health", methods=["GET"])
+@whatsapp_bp.route("/status", methods=["GET"])
 def health_check():
     """Verifica se o servidor está ativo."""
     return {"status": "ok", "service": "UDESC ChatBot"}, 200

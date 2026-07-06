@@ -1,0 +1,196 @@
+{
+  "welcome": "*Bienvenido al ChatBot de UDESC!*\n\nEste asistente fue creado para ayudar a estudiantes internacionales en la Universidad del Estado de Santa Catarina (UDESC).\n\n*Elige tu idioma / Escolha seu idioma:*\n1. Português\n2. English\n3. Español",
+
+  "main_menu": "*---MENU PRINCIPAL — UDESC---*\n\nEscribe el número de la opción:\n\n1. Información de los campus de UDESC\n2. Nuestras plataformas de estudiantes (SIGA, Moodle, SIGAA)\n3. Cómo obtener tu ID de UDESC\n4. Sistemas de UDESC — para qué sirve cada uno\n5. Información sobre el CPF\n6. Tutoría académica\n7. Servicio de orientación al estudiante (SOE)\n8. Vivienda estudiantil\n9. FAQ — Preguntas frecuentes\n10. Contactos de emergencia\n0. Terminar conversación\n\nPresiona \"*\" para volver a la pantalla anterior\nEscribe \"salir\" para finalizar la conversación.",
+
+  "invalid_option": "Opción inválida. Escribe un número del menú o \"*\" para volver.",
+
+  "goodbye": "¡Hasta pronto! Disfruta tu estadía en UDESC.\nSi necesitas ayuda, solo envía un mensaje.",
+
+  "navigation_hint": "\n\nPresiona \"*\" para volver a la pantalla anterior\nEscribe \"salir\" para finalizar la conversación.",
+
+  "centers": {
+    "list_header": "*CAMPUS DE UDESC*\n\nElige el número del campus:\n\n",
+    "items": [
+      {
+        "id": "cct",
+        "name": "CCT — Centro de Ciencias Tecnológicas",
+        "city": "Joinville/SC",
+        "address": "Rua Paulo Malschitzki, 200 — Zona Industrial Norte, Joinville/SC — ZIP 89219-710",
+        "website": "https://www.udesc.br/cct"
+      },
+      {
+        "id": "cefid",
+        "name": "CEFID — Centro de Ciencias de la Salud y del Deporte",
+        "city": "Florianópolis/SC",
+        "address": "Rua Pascoal Simone, 358 — Coqueiros, Florianópolis/SC — ZIP 88080-350",
+        "website": "https://www.udesc.br/cefid"
+      },
+      {
+        "id": "ceart",
+        "name": "CEART — Centro de Artes, Diseño y Moda",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 1907 — Itacorubi, Florianópolis/SC — ZIP 88035-901",
+        "website": "https://www.udesc.br/ceart"
+      },
+      {
+        "id": "faed",
+        "name": "FAED — Centro de Humanidades y Educación",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2007 — Itacorubi, Florianópolis/SC — ZIP 88035-901",
+        "website": "https://www.udesc.br/faed"
+      },
+      {
+        "id": "esag",
+        "name": "ESAG — Escuela Superior de Administración y Gestión",
+        "city": "Florianópolis/SC",
+        "address": "Av. Madre Benvenuta, 2037 — Itacorubi, Florianópolis/SC — ZIP 88035-001",
+        "website": "https://www.udesc.br/esag"
+      },
+      {
+        "id": "cav",
+        "name": "CAV — Centro de Ciencias Agro Veterinarias",
+        "city": "Lages/SC",
+        "address": "Av. Luís de Camões, 2090 — Conta Dinheiro, Lages/SC — ZIP 88520-000",
+        "website": "https://www.udesc.br/cav"
+      },
+      {
+        "id": "ceavi",
+        "name": "CEAVI — Centro de Educación Superior del Alto Vale del Itajaí",
+        "city": "Ibirama/SC",
+        "address": "Rua Dr. Getúlio Vargas, 2822 — Limoeiro, Ibirama/SC — ZIP 89140-000",
+        "website": "https://www.udesc.br/ceavi"
+      },
+      {
+        "id": "ceo",
+        "name": "CEO — Centro de Educación Superior del Oeste",
+        "city": "Chapecó/SC",
+        "address": "Rua Beloni Trombeta Zanin, 680E — Santo Antônio, Chapecó/SC — ZIP 89867-000",
+        "website": "https://www.udesc.br/ceo"
+      },
+      {
+        "id": "cesfi",
+        "name": "CESFI — Centro de Educación Superior de la Foz del Itajaí",
+        "city": "Balneário Camboriú/SC",
+        "address": "Avenida Lourival Cesario Pereira, s/n (Edifício Alcides Abreu) — Nova Esperança, Balneário Camboriú/SC — ZIP 88336-275",
+        "website": "https://www.udesc.br/cesfi"
+      },
+      {
+        "id": "cesmo",
+        "name": "CESMO — Centro de Educación Superior de la Región Centro-Oeste",
+        "city": "Caçador/SC",
+        "address": "Rua Carlos Coelho de Souza, 120 — Bairro DER (sede administrativa), Caçador/SC — ZIP 89506-030",
+        "website": "https://www.udesc.br/cesmo"
+      },
+      {
+        "id": "ceplan",
+        "name": "CEPLAN — Centro de Educación Superior de la Meseta Norte",
+        "city": "São Bento do Sul/SC",
+        "address": "Rua Luiz Fernando Hastreiter, 180 — Centenário, São Bento do Sul/SC — ZIP 89283-081",
+        "website": "https://www.udesc.br/ceplan"
+      },
+      {
+        "id": "ceres",
+        "name": "CERES — Centro de Educación Superior de la Región Sur",
+        "city": "Laguna/SC",
+        "address": "Rua Cel. Fernandes Martins, 270 — Progresso, Laguna/SC — ZIP 88790-000",
+        "website": "https://www.udesc.br/ceres"
+      }
+    ]
+  },
+
+  "systems_access": {
+    "header": "*PLATAFORMAS DE UDESC*\n\nEn tu vida académica diaria en UDESC usarás principalmente *SIGA*, *Moodle* y *SIGAA*.\n\nElige un sistema para ver sus *requisitos de acceso*:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Sistema integrado de gestión académica",
+        "detail": "*SIGA — Requisitos de acceso*\n\nAcceso: https://www.siga.udesc.br\n\n*Para acceder necesitas:*\n• *CPF* (por ejemplo, 123.456.789-00) — consulta la opción 3 en el menú\n• Contraseña institucional registrada\n• Matrícula activa en UDESC\n\nSIGA es la plataforma donde puedes consultar notas, ausencias y solicitar documentos."
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "Plataforma de aprendizaje en línea",
+        "detail": "*Moodle — Requisitos de acceso*\n\nAcceso: https://moodle.udesc.br\n\n*Para acceder necesitas:*\n• *ID de UDESC* y contraseña institucional — consulta la opción 3 en el menú\n\nMoodle es donde puedes encontrar los materiales del curso y entregar tareas."
+      },
+      {
+        "id": "sigaa",
+        "name": "SIGAA",
+        "description": "Sistema integrado de gestión de actividades académicas",
+        "detail": "*SIGAA — Requisitos de acceso*\n\nAcceso: https://www.sigaa.udesc.br\n\n*Para acceder necesitas:*\n• *ID de UDESC* y contraseña institucional — consulta la opción 3 en el menú\n• Matrícula activa en el curso (definida por el profesor)\n\nSIGAA se usa para actividades académicas y registro general. Aún está en fase beta y no está totalmente implementado en UDESC."
+      }
+    ]
+  },
+
+  "systems": {
+    "header": "*SISTEMAS DE UDESC*\n\nConoce para qué sirve cada sistema de la universidad. Elige una opción:\n\n",
+    "items": [
+      {
+        "id": "siga",
+        "name": "SIGA",
+        "description": "Calificaciones, ausencias y documentos académicos",
+        "detail": "*SIGA — Sistema integrado de gestión académica*\n\nSIGA se usa para:\n• Consultar *calificaciones y ausencias*\n• Ver el historial académico\n• Acceder al horario de clases\n• Solicitar documentos académicos\n\nAcceso: https://www.siga.udesc.br\n\n*Requisitos de acceso:*\n• ID de UDESC (por ejemplo, juan.perez)\n• Contraseña institucional\n• Matrícula activa\n\n¿La primera vez? Usa la opción 3 del menú principal para obtener tu ID de UDESC."
+      },
+      {
+        "id": "moodle",
+        "name": "Moodle",
+        "description": "Plataforma de aprendizaje en línea",
+        "detail": "*Moodle UDESC — Plataforma de aprendizaje en línea*\n\nMoodle se usa para:\n• Acceder al contenido y materiales del curso\n• Entregar ejercicios y tareas\n• Participar en foros y discusiones\n• Realizar cuestionarios y exámenes en línea\n\nAcceso: https://moodle.udesc.br\n\n*Requisitos de acceso:*\n• El mismo ID de UDESC y contraseña institucional\n• El profesor debe agregarte a la clase\n• Cualquier navegador moderno"
+      },
+      {
+        "id": "sas",
+        "name": "SAS",
+        "description": "Sistema de reserva de salas",
+        "detail": "*SAS — Sistema de reserva de salas*\n\nSAS te permite:\n• Ver la disponibilidad de salas y laboratorios\n• Reservar espacios para trabajo en grupo\n• Ver reservas existentes\n\nAcceso: a través del portal de tu campus\n\n*Requisitos de acceso:*\n• ID de UDESC\n• Matrícula activa"
+      },
+      {
+        "id": "office365",
+        "name": "Office 365",
+        "description": "Suite institucional de Microsoft (correo + aplicaciones)",
+        "detail": "*Office 365 — Microsoft para estudiantes de UDESC*\n\nCon Office 365 obtienes:\n• Correo institucional (@edu.udesc.br)\n• Microsoft Word, Excel, PowerPoint (en línea y escritorio)\n• OneDrive — 1 TB de almacenamiento en la nube\n• Microsoft Teams — videoconferencias\n\nAcceso: https://portal.office.com\n\n*Requisitos de acceso:*\n• Usuario: tuID@edu.udesc.br\n• Contraseña: la misma del ID de UDESC\n\nTu correo institucional se crea automáticamente con tu ID de UDESC."
+      },
+      {
+        "id": "biblioteca",
+        "name": "Biblioteca en línea",
+        "description": "Catálogo digital, tesis y revistas científicas",
+        "detail": "*Biblioteca en línea de UDESC*\n\nLa biblioteca ofrece:\n• Catálogo de libros físicos y e-books\n• Repositorio de tesis y disertaciones\n• Acceso a revistas científicas (CAPES)\n• Renovación de préstamos en línea\n\nPortal: https://www.udesc.br/bibliotecas\nRepositorio: https://repositorio.udesc.br\n\n*Requisitos:*\n• Número de matrícula o ID de UDESC\n• Para préstamos físicos: carné de estudiante"
+      },
+      {
+        "id": "site",
+        "name": "Sitio web de UDESC",
+        "description": "Portal institucional — cursos, profesores, currículo",
+        "detail": "*Sitio web institucional de UDESC*\n\nEn el sitio puedes encontrar:\n• Currículos de los cursos (PPC)\n• Información sobre profesores y departamentos\n• Noticias, eventos y anuncios\n• Contactos institucionales\n\nSitio web: https://www.udesc.br\nCurrículos: https://www.udesc.br/graduacao/ppc"
+      }
+    ]
+  },
+
+  "id_udesc": "*CÓMO OBTENER TU ID DE UDESC*\n\nEl ID de UDESC es tu acceso institucional, válido para SIGA, SIGAA, Moodle, Office 365 y todos los sistemas universitarios.\n\n*Paso a paso:*\n\n1 Ve a: https://estudante.udesc.br\n\n2 Haz clic en *\"Primer acceso\"* o *\"Activar ID de UDESC\"*\n\n3 Ingresa tu *CPF* (documento brasileño) y *fecha de nacimiento*\n\n4 Crea una contraseña (mínimo 8 caracteres, letras y números)\n\n5 Confirma mediante tu correo personal registrado en la matrícula\n\n¡Listo! Formato del ID: *nombre.apellido* (por ejemplo, juan.perez)\n\n*Requisito:* Debes tener un CPF válido y una matrícula activa.\n\n¿Problemas? Contacta al equipo de tutoría de tu campus o a TI:\nsti@udesc.br\nhttps://www.udesc.br/sti/idudesc",
+
+  "cpf": {
+    "header": "*INFORMACIÓN SOBRE EL CPF*\n\nEl CPF (Cadastro de Pessoa Física) es *obligatorio* para estudiantes internacionales en Brasil. Lo necesitarás para abrir una cuenta bancaria, obtener una SIM, crear tu ID de UDESC y acceder a sistemas gubernamentales.\n\n*Cómo solicitarlo en línea:*\n\n1 Ve a: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2 Haz clic en *\"Registrar CPF\"* → *\"Extranjero\"*\n\n3 Completa tus datos personales (nombre, fecha de nacimiento, país)\n\n4 Paga la tarifa de R$ 7,00 (generada en el portal)\n\n*IMPORTANTE — Validación presencial obligatoria:*\nDespués del registro online, los extranjeros *deben presentarse en persona* en una oficina de la Receita Federal para validar el CPF. Lleva: pasaporte + visa válida.\n\nPara indicarte la oficina de la Receita Federal *más cercana a tu campus*, escribe el número del campus donde estudias:\n\n",
+    "detail_template": "*Validación presencial del CPF — {center}*\n\nSegún el campus en el que te encuentras ({city}), la oficina de la Receita Federal más cercana es:\n\n*{receita}*\n\n*Lleva contigo:*\n• Pasaporte\n• Visa válida\n• Recibo del registro online\n\nUna vez validado el CPF, podrás crear tu ID de UDESC (opción 3 del menú)."
+  },
+
+  "soe": "*SERVICIO DE ORIENTACIÓN AL ESTUDIANTE (SOE)*\n\nSOE ofrece apoyo psicológico, social y académico a todos los estudiantes de UDESC, *incluidos los internacionales*.\n\n*Servicios ofrecidos:*\n• Orientación psicológica y emocional\n• Apoyo académico\n• Ayuda con la adaptación cultural\n• Derivaciones de salud\n• Apoyo en vulnerabilidad social\n\n*Horario de atención:*\nLunes a viernes, de 8:00 a 18:00\n(comprueba los horarios específicos de tu campus)\n\n*Sitio web:* https://www.udesc.br/soe\n*Correo:* soe@udesc.br\n\n*Ubicación:*\nEl SOE opera en cada campus. Pregunta en la secretaría de tu campus por la ubicación exacta.\n\nEl SOE es especialmente útil para estudiantes internacionales que se adaptan a la vida en Brasil.",
+
+  "residencia": {
+    "header": "*VIVIENDA ESTUDIANTIL*\n\nLamentablemente, las instalaciones de vivienda no están disponibles actualmente en UDESC.\n\n",
+    "body": "Sin embargo, aún puedes solicitar subsidios a través de la beca PROPE, que ofrece apoyo financiero para estudiantes con necesidad.\nMás información en: https://www.udesc.br/secretaria/sae/politica-de-permanencia-estudantil/prope\n"
+  },
+
+  "faq": {
+    "header": "*FAQ — PREGUNTAS FRECUENTES*\n\nElige una categoría:\n\n1. Restaurante universitario\n2. Transporte\n3. Internet Wi-Fi\n4. Impresión\n5. Bancos y cambio de moneda\n6. SIM\n7. Vivienda\n",
+    "items": {
+      "ru": "*RESTAURANTE UNIVERSITARIO*\n\nAlgunos campus de UDESC tienen cafetería o convenios con restaurantes cercanos.\n\n*CCT — Joinville:*\nRestaurante estudiantil con precios subsidiados para estudiantes matriculados.\nHorario: 7:30 a 21:00, 11:00 a 14:00 (almuerzo), 17:30 a 20:00 (cena)\n\nConsulta con el equipo de tutoría de tu campus los horarios y precios actualizados.\n\nAsistencia estudiantil: https://www.udesc.br/assistenciaestudantil",
+      "transporte": "*TRANSPORTE*\n\n*Autobuses urbanos:*\n• Joinville: https://onibus.info\n• Florianópolis: https://www.consorciofenix.com.br\n\n*Aplicaciones de viaje:*\n• Uber: https://www.uber.com/br\n• 99: https://www.99app.com\n\n*Descuento estudiantil para transporte (media tarifa):*\nEn algunos campus, los estudiantes matriculados tienen derecho a media tarifa en transporte público. Consulta con la oficina de tu campus para más información.\n\n*Aeropuertos más cercanos:*\n• Joinville: Aeropuerto Lauro Carneiro de Loyola\n• Florianópolis: Aeropuerto Hercílio Luz\n• Lages: Aeropuerto Antônio Correia Pinto de Macedo",
+      "wifi": "*WI-FI INTERNET*\n\n*Red UDESC:*\nTodos los campus ofrecen Wi-Fi gratuito para estudiantes.\n\n*Red Eduroam:*\nUDESC forma parte de la red Eduroam — conéctate en universidades de todo el mundo utilizando tu acceso institucional.\n\n*Cómo conectarte:*\n1 Selecciona la red *UDESC* o *eduroam*\n2 Usuario: tuID@udesc.br\n3 Contraseña: tu contraseña del ID UDESC\n\nMás información: https://www.udesc.br/arquivos/ceplan/id_cpmenu/528/Manual_WiFi_15822333946055_528.pdf",
+      "impressao": "*IMPRESIÓN*\n\n*En el campus:*\nAlgunos campus ofrecen servicios de impresión para estudiantes. Consulta con la oficina del campus o el equipo de tutoría sobre precios y disponibilidad.\n\n*Imprentas cercanas:*\nHay imprentas y copisterías cerca de todos los campus. El equipo de tutoría puede recomendar opciones accesibles.\n\n*Consejo:* Usa OneDrive (Office 365) para guardar y acceder a tus archivos desde cualquier computadora de la universidad.",
+      "bancos": "*BANCOS Y CAMBIO DE MONEDA*\n\n*Principales bancos brasileños:*\nBanco do Brasil, Caixa, Bradesco, Itaú y Santander tienen sucursales en todas las ciudades de UDESC.\n\n*Bancos digitales (más fáciles para extranjeros):*\n• Nubank: https://nubank.com.br\n• Inter: https://bancointer.com.br\n• C6 Bank: https://c6bank.com.br\n\nLos bancos digitales suelen abrir cuentas con solo CPF y selfie — sin garante requerido.\n\n*Documentos para una cuenta bancaria tradicional:*\n• CPF válido (validado en persona)\n• Pasaporte\n• Comprobante de domicilio\n• Visa de estudiante\n\n*Transferencias internacionales:*\n• Wise: https://wise.com (mejores tasas)\n• Casas de cambio en el centro de la ciudad",
+      "chip": "*SIM CARD*\n\n*Documentos requeridos:*\n• CPF (obligatorio)\n\n*Operadoras principales:*\n• Claro: https://www.claro.com.br\n• Vivo: https://www.vivo.com.br\n• TIM: https://www.tim.com.br\n• Oi: https://www.oi.com.br\n\n*Consejo para estudiantes internacionales:*\nCompra una *SIM prepago* primero — no requiere comprobante de domicilio.\nLas SIM se venden en tiendas de operadores, farmacias y supermercados.\n\nJoinville y Florianópolis tienen excelente cobertura 4G/5G de todas las operadoras.",
+      "moradia": "*VIVIENDA*\n\n*Tipos de vivienda:*\n• *Casa compartida (república):* casa compartida — opción más económica\n• *Estudio (kitnet):* unidad individual con cocina pequeña\n• *Departamento compartido:* 2-3 personas compartiendo alquiler\n\n*Dónde buscar:*\n• OLX: https://www.olx.com.br\n• Quinto Andar: https://www.quintoandar.com.br\n• Grupos de estudiantes de UDESC en Facebook/WhatsApp\n\n*El equipo de tutoría puede ayudar:*\nSuele tener listas de propiedades cercanas y puede recomendar barrios seguros.\n\n*Precios promedio (Joinville — CCT):*\n• Habitación en casa compartida: R$ 700–900/mes\n• Estudio: R$ 900–1.300/mes\n• Departamento compartido (por persona): R$ 650–1.000/mes\n\nLos alquileres suelen requerir un garante brasileño o seguro de alquiler."
+    }
+  },
+
+  "emergency": "*CONTACTOS DE EMERGENCIA*\n\n*Llama ahora:*\nPolicía Militar: *190*\nSAMU (ambulancia): *192*\nBomberos: *193*\nCentral de emergencias: *199*\n\n*Hospitales por ciudad:*\n• Joinville: Hospital Municipal São José — (47) 3441-6666\n• Florianópolis: Hospital Universitario (HU-UFSC) — (48) 3721-9140\n• Lages: Hospital Tereza Ramos — (49) 3289-9000\n• Chapecó: Hospital Regional do Oeste — (49) 3321-6500\n\n*Transporte de emergencia:*\n• Uber: aplicación Uber\n• 99: aplicación 99\n• Taxi de Joinville: (47) 99775-7777\n\n*Asuntos migratorios/consulares:*\n• Policía Federal: https://www.gov.br/pf/pt-br\n• Ministerio de Relaciones Exteriores: https://www.gov.br/mre\n\n*Para emergencias médicas, llama al 192 (SAMU) inmediatamente!*"
+}

@@ -9,20 +9,18 @@ from datetime import datetime
 
 # Comandos de navegação global
 _NAV = {
-    "exit": {"sair", "exit", "bye", "tchau", "quit", "adeus"},
-    "menu": {"menu", "inicio", "início", "home", "main menu", "principal", "0"},
-    "back": {"voltar", "back", "anterior", "b", "retornar"},
+    "exit": {"sair", "exit", "salir", "quit"},
+    "back": {"*"},
 }
 
-# Mapeamento estado → chave JSON para conteúdo estático
+# Mapeamento estado -> chave JSON para conteúdo estático
 _STATIC_CONTENT: Dict[str, str] = {
     "ID_UDESC": "id_udesc",
     "SOE": "soe",
     "EMERGENCY": "emergency",
 }
 
-# Opções do menu principal → (próximo estado, chave estática ou None)
-# Numeração espelha a Tabela 1 do trabalho (itens 1 a 8) + extras (9 e 10)
+# Opções do menu principal -> (próximo estado, chave estática ou None)
 _MAIN_MENU_OPTIONS: Dict[str, tuple] = {
     "1": ("CENTERS_LIST", None),
     "2": ("SYSTEMS_ACCESS_MENU", None),
@@ -101,9 +99,9 @@ class BotService:
 
     def _load_messages(self) -> None:
         data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-        for lang in ("pt", "en"):
+        for lang in ("pt", "en", "es"):
             path = os.path.join(data_dir, f"messages_{lang}.json")
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8-sig") as f:
                 self._msg[lang] = json.load(f)
 
     def m(self, lang: str, key: str) -> Any:
@@ -149,12 +147,6 @@ class BotService:
     ) -> Optional[str]:
         if lower in _NAV["exit"] or (lower == "0" and session.state == "MAIN_MENU"):
             return self._end_session(user_id, session.language)
-
-        if lower in _NAV["menu"]:
-            session.state = "MAIN_MENU"
-            session.context = {}
-            self._session_svc.save(user_id, session)
-            return self.m(session.language, "main_menu")
 
         if lower in _NAV["back"] and session.state not in ("MAIN_MENU", "WELCOME"):
             prev = session.previous_state or "MAIN_MENU"
@@ -213,6 +205,10 @@ class BotService:
             session.language = "en"
             session.state = "MAIN_MENU"
             return self.m("en", "main_menu")
+        if lower in ("3", "es", "español", "espanol", "s"):
+            session.language = "es"
+            session.state = "MAIN_MENU"
+            return self.m("es", "main_menu")
         return self.m("pt", "welcome")
 
     def _handle_main_menu(self, user_id: str, session: Session, msg: str) -> str:
@@ -246,7 +242,7 @@ class BotService:
         if not msg:
             header = self.m(lang, "centers.list_header")
             items = "\n".join(
-                f"{i + 1}️⃣  {c['name']} — {c['city']}" for i, c in enumerate(centers)
+                f"{i + 1}. {c['name']} — {c['city']}" for i, c in enumerate(centers)
             )
             return header + items + self.m(lang, "navigation_hint")
 
@@ -280,19 +276,15 @@ class BotService:
         nav = self.m(lang, "navigation_hint")
         if lang == "pt":
             return (
-                f"🏛️ *{c['name']}*\n\n"
-                f"📍 *Endereço:* {c['address']}\n"
-                f"📞 *Telefone:* {c['phone']}\n"
-                f"🌐 *Site:* {c['website']}\n"
-                f"🗺️ *Google Maps:* {c['maps']}"
+                f" *{c['name']}*\n\n"
+                f" *Endereço:* {c['address']}\n"
+                f" *Site:* {c['website']}\n"
                 + nav
             )
         return (
-            f"🏛️ *{c['name']}*\n\n"
-            f"📍 *Address:* {c['address']}\n"
-            f"📞 *Phone:* {c['phone']}\n"
-            f"🌐 *Website:* {c['website']}\n"
-            f"🗺️ *Google Maps:* {c['maps']}"
+            f" *{c['name']}*\n\n"
+            f" *Address:* {c['address']}\n"
+            f" *Website:* {c['website']}\n"
             + nav
         )
 
@@ -329,7 +321,7 @@ class BotService:
         if not msg:
             header = self.m(lang, f"{json_key}.header")
             items = "\n".join(
-                f"{i + 1}️⃣  *{s['name']}* — {s['description']}"
+                f"{i + 1}. *{s['name']}* — {s['description']}"
                 for i, s in enumerate(systems)
             )
             return header + items + self.m(lang, "navigation_hint")
@@ -372,7 +364,7 @@ class BotService:
         if not msg:
             header = self.m(lang, "cpf.header")
             items = "\n".join(
-                f"{i + 1}️⃣  {c['name']} — {c['city']}" for i, c in enumerate(centers)
+                f"{i + 1}. {c['name']} — {c['city']}" for i, c in enumerate(centers)
             )
             return header + items + self.m(lang, "navigation_hint")
 
@@ -419,12 +411,12 @@ class BotService:
 
         if not msg:
             header = (
-                "👩‍🏫 *TUTORIA ACADÊMICA*\n\nSelecione seu centro:\n\n"
+                "*TUTORIA ACADÊMICA*\n\nSelecione seu centro:\n\n"
                 if lang == "pt"
-                else "👩‍🏫 *ACADEMIC TUTORING*\n\nSelect your campus:\n\n"
+                else "*ACADEMIC TUTORING*\n\nSelect your campus:\n\n"
             )
             items = "\n".join(
-                f"{i + 1}️⃣  {c['name']}" for i, c in enumerate(centers)
+                f"{i + 1}. {c['name']}" for i, c in enumerate(centers)
             )
             return header + items + self.m(lang, "navigation_hint")
 
@@ -458,21 +450,21 @@ class BotService:
         nav = self.m(lang, "navigation_hint")
         if lang == "pt":
             return (
-                f"👩‍🏫 *Tutoria Acadêmica — {c['name']}*\n\n"
-                f"📧 E-mail: {c['tutoria_email']}\n"
-                f"📞 Telefone: {c['tutoria_phone']}\n"
-                f"🌐 Site: {c['tutoria_site']}\n"
-                f"🕐 Horário: {c['tutoria_hours']}\n\n"
+                f"*Tutoria Acadêmica — {c['name']}*\n\n"
+                f"E-mail: {c['tutoria_email']}\n"
+                f"Telefone: {c['tutoria_phone']}\n"
+                f"Site: {c['tutoria_site']}\n"
+                f"Horário: {c['tutoria_hours']}\n\n"
                 "A equipe de tutoria auxilia estudantes estrangeiros na adaptação "
                 "acadêmica e cultural à UDESC."
                 + nav
             )
         return (
-            f"👩‍🏫 *Academic Tutoring — {c['name']}*\n\n"
-            f"📧 Email: {c['tutoria_email']}\n"
-            f"📞 Phone: {c['tutoria_phone']}\n"
-            f"🌐 Website: {c['tutoria_site']}\n"
-            f"🕐 Hours: {c['tutoria_hours']}\n\n"
+            f"*Academic Tutoring — {c['name']}*\n\n"
+            f"Email: {c['tutoria_email']}\n"
+            f"Phone: {c['tutoria_phone']}\n"
+            f"Website: {c['tutoria_site']}\n"
+            f"Hours: {c['tutoria_hours']}\n\n"
             "The tutoring team helps international students adapt academically "
             "and culturally to UDESC."
             + nav
@@ -482,57 +474,17 @@ class BotService:
 
     def _handle_residencia_select(self, user_id: str, session: Session, msg: str) -> str:
         lang = session.language or "pt"
-        centers = self.m(lang, "centers.items")
-
-        if not msg:
-            header = self.m(lang, "residencia.header")
-            items = "\n".join(
-                f"{i + 1}️⃣  {c['name']}" for i, c in enumerate(centers)
-            )
-            return header + items + self.m(lang, "navigation_hint")
-
-        try:
-            idx = int(msg.strip()) - 1
-            if 0 <= idx < len(centers):
-                center = centers[idx]
-                session.previous_state = "RESIDENCIA_SELECT"
-                session.state = "RESIDENCIA_DETAIL"
-                session.context = {"center_id": center["id"]}
-                return self._format_residencia(center, lang)
-        except ValueError:
-            pass
-
-        return (
-            self.m(lang, "invalid_option")
-            + "\n\n"
-            + self._handle_residencia_select(user_id, session, "")
-        )
+        return self._format_residencia(lang)
 
     def _handle_residencia_detail(
         self, user_id: str, session: Session, msg: str
     ) -> str:
         lang = session.language or "pt"
-        centers = self.m(lang, "centers.items")
-        cid = session.context.get("center_id")
-        center = next((c for c in centers if c["id"] == cid), None)
-        if center:
-            return self._format_residencia(center, lang)
-        return self._handle_residencia_select(user_id, session, "")
+        return self._format_residencia(lang)
 
-    def _format_residencia(self, c: Dict, lang: str) -> str:
+    def _format_residencia(self, lang: str) -> str:
         nav = self.m(lang, "navigation_hint")
-        if c.get("has_residencia"):
-            tmpl = self.m(lang, "residencia.available_template")
-            return (
-                tmpl.format(
-                    center=c["name"],
-                    residencia_info=c.get("residencia_info", ""),
-                    tutoria_contact=f"{c['tutoria_email']} | {c['tutoria_phone']}",
-                )
-                + nav
-            )
-        tmpl = self.m(lang, "residencia.not_available")
-        return tmpl.format(center=c["name"]) + nav
+        return self.m(lang, "residencia.header") + self.m(lang, "residencia.body") + nav
 
     # --- FAQ ---
 

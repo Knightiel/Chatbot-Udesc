@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
+from services.bot_service import bot_service
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv(os.path.join(BASE_DIR, ".env"))
-
-from services.bot_service import bot_service
 
 
 async def _reply(update: Update, text: str) -> None:
@@ -34,7 +34,7 @@ async def _handle_message(update: Update, context) -> None:
 
 
 def run_telegram_bot() -> None:
-    """Inicia o bot Telegram em modo polling (blocante — rodar em thread separada)."""
+    """Inicia o bot Telegram em modo polling"""
     token = os.getenv("TELEGRAM_TOKEN")
     if not token:
         print("TELEGRAM_TOKEN não definido — bot Telegram desativado.")
