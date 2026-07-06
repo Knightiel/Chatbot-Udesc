@@ -1,7 +1,3 @@
-"""
-Rotas Flask para o webhook do WhatsApp via Twilio.
-"""
-
 from flask import Blueprint, request
 
 from controllers.whatsapp_controller import handle_whatsapp

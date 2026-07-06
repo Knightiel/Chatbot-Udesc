@@ -1,16 +1,16 @@
 {
-  "welcome": "🎓 *Hello! Welcome to UDESC ChatBot!*\n\nThis assistant was created to help international exchange students at the State University of Santa Catarina.\n\n━━━━━━━━━━━━━━━━━━━━\n*Choose your language / Escolha seu idioma:*\n1️⃣  Português\n2️⃣  English",
+  "welcome": "*Welcome to the UDESC ChatBot!*\n\nThis assistant was created to help international students at the State University of Santa Catarina (UDESC).\n\n*Choose your language / Escolha seu idioma:*\n1 - Português\n2 - English",
 
-  "main_menu": "📋 *MAIN MENU — UDESC*\n\nType the option number:\n\n1️⃣  UDESC Campus Addresses\n2️⃣  Systems You Will Use (SIGA, Moodle, SIGAA)\n3️⃣  How to Get Your UDESC ID\n4️⃣  UDESC Systems — what each one is for\n5️⃣  CPF Information\n6️⃣  Academic Tutoring\n7️⃣  Student Counseling Service (SOE)\n8️⃣  Student Housing\n9️⃣  FAQ — Frequently Asked Questions\n🔟  Emergency Contacts\n0️⃣  End conversation\n\n💡 Anytime: *menu* → home  |  *back* → previous  |  *exit* → quit",
+  "main_menu": "*MAIN MENU — UDESC*\n\nType the option number:\n\n1 - UDESC Campi Information\n2 - Our Student Platforms (SIGA, Moodle, SIGAA)\n3 - How to Get Your UDESC ID\n4 - UDESC Systems — what each one is for\n5 - CPF Information\n6 - Academic Tutoring\n7 - Student Counseling Service (SOE)\n8 - Student Housing\n9 - FAQ — Frequently Asked Questions\n10 - Emergency Contacts\n0 - End conversation\n\nAnytime: *menu* → home  |  *back* → previous  |  *exit* → quit",
 
-  "invalid_option": "❌ Invalid option. Type a number from the menu or *menu* to see options.",
+  "invalid_option": "Invalid option. Type a number from the menu or *menu* to see options.",
 
-  "goodbye": "👋 Goodbye! Enjoy your exchange at UDESC! 🎓\nIf you need help, just send a message.",
+  "goodbye": "Goodbye! Enjoy your stay at UDESC! \nIf you need help, just send a message.",
 
-  "navigation_hint": "\n\n━━━━━━━━━━━━━━━━━━━━\n💡 *menu* → Main menu  |  *back* → Previous  |  *exit* → Quit",
+  "navigation_hint": "\n\n*menu* → Main menu  |  *back* → Previous  |  *exit* → Quit",
 
   "centers": {
-    "list_header": "🏛️ *UDESC CAMPUSES*\n\nChoose the campus number:\n\n",
+    "list_header": "️ *UDESC CAMPUSES*\n\nChoose the campus number:\n\n",
     "items": [
       {
         "id": "cct",
@@ -129,98 +129,98 @@
   },
 
   "systems_access": {
-    "header": "💻 *SYSTEMS YOU WILL USE*\n\nIn your daily academic life at UDESC you will mainly use *SIGA*, *Moodle* and *SIGAA*.\n\nChoose a system to see its *access requirements*:\n\n",
+    "header": " *SYSTEMS YOU WILL USE*\n\nIn your daily academic life at UDESC you will mainly use *SIGA*, *Moodle* and *SIGAA*.\n\nChoose a system to see its *access requirements*:\n\n",
     "items": [
       {
         "id": "siga",
         "name": "SIGA",
         "description": "Integrated Academic Management System",
-        "detail": "📊 *SIGA — Access requirements*\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* (format: firstname.lastname) — see option 3 in the menu\n• Registered institutional password\n• Active enrollment at UDESC\n• Valid CPF (required to create your UDESC ID)\n\n💡 SIGA is where you check grades, absences and request documents."
+        "detail": " *SIGA — Access requirements*\n\nAccess: https://www.siga.udesc.br\n\n*To access you need:*\n• *UDESC ID* (format: firstname.lastname) — see option 3 in the menu\n• Registered institutional password\n• Active enrollment at UDESC\n• Valid CPF (required to create your UDESC ID)\n\nSIGA is where you check grades, absences and request documents."
       },
       {
         "id": "moodle",
         "name": "Moodle",
         "description": "E-learning Platform",
-        "detail": "🖥️ *Moodle — Access requirements*\n\n🔗 Access: https://moodle.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• To be added to the class by the course professor\n• Any modern web browser\n\n💡 Moodle is where course materials and assignment submissions live."
+        "detail": "️ *Moodle — Access requirements*\n\nAccess: https://moodle.udesc.br\n\n*To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• To be added to the class by the course professor\n• Any modern web browser\n\nMoodle is where course materials and assignment submissions live."
       },
       {
         "id": "sigaa",
         "name": "SIGAA",
         "description": "Integrated Academic Activities Management System",
-        "detail": "📚 *SIGAA — Access requirements*\n\n🔗 Access: https://www.sigaa.udesc.br\n\n🔑 *To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• Active enrollment in the course (set by the professor)\n\n💡 SIGAA is used for academic activities, communication with professors and the calendar."
+        "detail": " *SIGAA — Access requirements*\n\nAccess: https://www.sigaa.udesc.br\n\n*To access you need:*\n• *UDESC ID* and institutional password — see option 3 in the menu\n• Active enrollment in the course (set by the professor)\n\nSIGAA is used for academic activities, communication with professors and the calendar."
       }
     ]
   },
 
   "systems": {
-    "header": "💻 *UDESC SYSTEMS*\n\nLearn what each university system is for. Choose an option:\n\n",
+    "header": " *UDESC SYSTEMS*\n\nLearn what each university system is for. Choose an option:\n\n",
     "items": [
       {
         "id": "siga",
         "name": "SIGA",
         "description": "Grades, absences and academic documents",
-        "detail": "📊 *SIGA — Integrated Academic Management System*\n\nSIGA is used to:\n• Check *grades and absences*\n• View academic transcripts\n• Access class schedules\n• Request academic documents\n\n🔗 Access: https://www.siga.udesc.br\n\n🔑 *Access requirements:*\n• UDESC ID (e.g. joao.silva)\n• Institutional password\n• Active enrollment\n\n💡 First time? Use option 3 in the main menu to get your UDESC ID."
+        "detail": " *SIGA — Integrated Academic Management System*\n\nSIGA is used to:\n• Check *grades and absences*\n• View academic transcripts\n• Access class schedules\n• Request academic documents\n\nAccess: https://www.siga.udesc.br\n\n*Access requirements:*\n• UDESC ID (e.g. joao.silva)\n• Institutional password\n• Active enrollment\n\nFirst time? Use option 3 in the main menu to get your UDESC ID."
       },
       {
         "id": "moodle",
         "name": "Moodle",
         "description": "E-learning Platform",
-        "detail": "🖥️ *Moodle UDESC — E-learning Platform*\n\nMoodle is used to:\n• Access course content and materials\n• Submit exercises and assignments\n• Participate in forums and discussions\n• Complete online quizzes and exams\n\n🔗 Access: https://moodle.udesc.br\n\n🔑 *Access requirements:*\n• Same UDESC ID and institutional password\n• Professor must add you to the class\n• Any modern web browser"
+        "detail": "️ *Moodle UDESC — E-learning Platform*\n\nMoodle is used to:\n• Access course content and materials\n• Submit exercises and assignments\n• Participate in forums and discussions\n• Complete online quizzes and exams\n\nAccess: https://moodle.udesc.br\n\n*Access requirements:*\n• Same UDESC ID and institutional password\n• Professor must add you to the class\n• Any modern web browser"
       },
       {
         "id": "sas",
         "name": "SAS",
         "description": "Room Booking System",
-        "detail": "🏫 *SAS — Room Booking System*\n\nSAS allows you to:\n• Check room and lab availability\n• Book study spaces for group work\n• View existing reservations\n\n🔗 Access: Through your campus portal\n\n🔑 *Access requirements:*\n• UDESC ID\n• Active enrollment"
+        "detail": " *SAS — Room Booking System*\n\nSAS allows you to:\n• Check room and lab availability\n• Book study spaces for group work\n• View existing reservations\n\nAccess: Through your campus portal\n\n*Access requirements:*\n• UDESC ID\n• Active enrollment"
       },
       {
         "id": "office365",
         "name": "Office 365",
         "description": "Microsoft institutional suite (email + apps)",
-        "detail": "📧 *Office 365 — Microsoft for UDESC Students*\n\nWith Office 365 you get:\n• Institutional email (@edu.udesc.br)\n• Microsoft Word, Excel, PowerPoint (online & desktop)\n• OneDrive — 1TB cloud storage\n• Microsoft Teams — video conferencing\n\n🔗 Access: https://portal.office.com\n\n🔑 *Access requirements:*\n• Login: yourID@edu.udesc.br\n• Password: same as UDESC ID\n\n💡 Your institutional email is created automatically with your UDESC ID."
+        "detail": " *Office 365 — Microsoft for UDESC Students*\n\nWith Office 365 you get:\n• Institutional email (@edu.udesc.br)\n• Microsoft Word, Excel, PowerPoint (online & desktop)\n• OneDrive — 1TB cloud storage\n• Microsoft Teams — video conferencing\n\nAccess: https://portal.office.com\n\n*Access requirements:*\n• Login: yourID@edu.udesc.br\n• Password: same as UDESC ID\n\nYour institutional email is created automatically with your UDESC ID."
       },
       {
         "id": "biblioteca",
         "name": "Online Library",
         "description": "Digital catalog, theses and scientific journals",
-        "detail": "📖 *UDESC Online Library*\n\nThe library offers:\n• Physical books and e-books catalog\n• Repository of theses and dissertations\n• Access to scientific journals (CAPES)\n• Online loan renewals\n\n🔗 Portal: https://www.udesc.br/bibliotecas\n📚 Repository: https://repositorio.udesc.br\n\n🔑 *Requirements:*\n• Enrollment number or UDESC ID\n• For physical loans: student ID card"
+        "detail": " *UDESC Online Library*\n\nThe library offers:\n• Physical books and e-books catalog\n• Repository of theses and dissertations\n• Access to scientific journals (CAPES)\n• Online loan renewals\n\nPortal: https://www.udesc.br/bibliotecas\nRepository: https://repositorio.udesc.br\n\n*Requirements:*\n• Enrollment number or UDESC ID\n• For physical loans: student ID card"
       },
       {
         "id": "site",
         "name": "UDESC Website",
         "description": "Institutional portal — courses, professors, curriculum",
-        "detail": "🌐 *UDESC Institutional Website*\n\nOn the website you can find:\n• Course curricula (PPC) for all programs\n• Information about professors and departments\n• News, events and announcements\n• Institutional contacts\n\n🔗 Website: https://www.udesc.br\n📋 Curricula: https://www.udesc.br/graduacao/ppc"
+        "detail": " *UDESC Institutional Website*\n\nOn the website you can find:\n• Course curricula (PPC) for all programs\n• Information about professors and departments\n• News, events and announcements\n• Institutional contacts\n\nWebsite: https://www.udesc.br\nCurricula: https://www.udesc.br/graduacao/ppc"
       }
     ]
   },
 
-  "id_udesc": "🔐 *HOW TO GET YOUR UDESC ID*\n\nThe UDESC ID is your institutional login, valid for SIGA, SIGAA, Moodle, Office 365 and all university systems.\n\n📋 *Step by step:*\n\n1️⃣ Go to: https://estudante.udesc.br\n\n2️⃣ Click *\"First Access\"* or *\"Activate UDESC ID\"*\n\n3️⃣ Enter your *CPF* (Brazilian tax ID) and *date of birth*\n\n4️⃣ Create a password (min. 8 characters, letters and numbers)\n\n5️⃣ Confirm via your personal email registered at enrollment\n\n✅ Done! ID format: *firstname.lastname* (e.g. joao.silva)\n\n⚠️ *Requirement:* You must have a valid CPF and an active enrollment.\n\n🆘 Problems? Contact your campus tutoring team or IT:\n📧 sti@udesc.br\n🔗 https://www.udesc.br/sti/idudesc",
+  "id_udesc": " *HOW TO GET YOUR UDESC ID*\n\nThe UDESC ID is your institutional login, valid for SIGA, SIGAA, Moodle, Office 365 and all university systems.\n\n*Step by step:*\n\n1 Go to: https://estudante.udesc.br\n\n2 Click *\"First Access\"* or *\"Activate UDESC ID\"*\n\n3 Enter your *CPF* (Brazilian tax ID) and *date of birth*\n\n4 Create a password (min. 8 characters, letters and numbers)\n\n5 Confirm via your personal email registered at enrollment\n\nDone! ID format: *firstname.lastname* (e.g. joao.silva)\n\n️ *Requirement:* You must have a valid CPF and an active enrollment.\n\n🆘 Problems? Contact your campus tutoring team or IT:\nsti@udesc.br\nhttps://www.udesc.br/sti/idudesc",
 
   "cpf": {
-    "header": "🪪 *CPF INFORMATION*\n\nThe CPF (Brazilian Individual Taxpayer ID) is *mandatory* for international students in Brazil. You'll need it to open a bank account, get a SIM card, create your UDESC ID and access government systems.\n\n📱 *How to apply online:*\n\n1️⃣ Go to: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2️⃣ Click *\"Register CPF\"* → *\"Foreigner\"*\n\n3️⃣ Fill in your personal details (name, date of birth, country)\n\n4️⃣ Pay the fee of R$ 7.00 (generated on the portal)\n\n⚠️ *IMPORTANT — Mandatory in-person validation:*\nAfter online registration, foreigners *must appear in person* at a Receita Federal (Federal Revenue) office to validate the CPF. Bring: passport + valid visa.\n\n📍 So I can tell you the Receita Federal office *closest to your campus*, type the number of the campus where you study:\n\n",
-    "detail_template": "🪪 *CPF in-person validation — {center}*\n\nBased on the campus where you are ({city}), the nearest Receita Federal office is:\n\n📍 *{receita}*\n\n📄 *Bring with you:*\n• Passport\n• Valid visa\n• Online registration receipt\n\n💡 Once your CPF is validated, you can create your UDESC ID (option 3 in the menu)."
+    "header": " *CPF INFORMATION*\n\nThe CPF (Brazilian Individual Taxpayer ID) is *mandatory* for international students in Brazil. You'll need it to open a bank account, get a SIM card, create your UDESC ID and access government systems.\n\n*How to apply online:*\n\n1 Go to: https://www.gov.br/receitafederal/pt-br/assuntos/cpf\n\n2 Click *\"Register CPF\"* → *\"Foreigner\"*\n\n3 Fill in your personal details (name, date of birth, country)\n\n4 Pay the fee of R$ 7.00 (generated on the portal)\n\n️ *IMPORTANT — Mandatory in-person validation:*\nAfter online registration, foreigners *must appear in person* at a Receita Federal (Federal Revenue) office to validate the CPF. Bring: passport + valid visa.\n\nSo I can tell you the Receita Federal office *closest to your campus*, type the number of the campus where you study:\n\n",
+    "detail_template": " *CPF in-person validation — {center}*\n\nBased on the campus where you are ({city}), the nearest Receita Federal office is:\n\n*{receita}*\n\n*Bring with you:*\n• Passport\n• Valid visa\n• Online registration receipt\n\nOnce your CPF is validated, you can create your UDESC ID (option 3 in the menu)."
   },
 
-  "soe": "🎓 *STUDENT COUNSELING SERVICE (SOE)*\n\nThe SOE provides psychological, social and academic support to all UDESC students, *including international students*.\n\n📋 *Services offered:*\n• Psychological and emotional counseling\n• Academic support\n• Cultural adaptation assistance\n• Healthcare referrals\n• Social vulnerability support\n\n🕐 *Opening hours:*\nMonday to Friday, 8am to 6pm\n(check specific hours at your campus)\n\n🔗 *Website:* https://www.udesc.br/soe\n📧 *Email:* soe@udesc.br\n\n📍 *Location:*\nThe SOE operates at each campus. Ask at your campus secretariat for the exact location.\n\n💡 The SOE is especially helpful for international students adapting to life in Brazil.",
+  "soe": " *STUDENT COUNSELING SERVICE (SOE)*\n\nThe SOE provides psychological, social and academic support to all UDESC students, *including international students*.\n\n*Services offered:*\n• Psychological and emotional counseling\n• Academic support\n• Cultural adaptation assistance\n• Healthcare referrals\n• Social vulnerability support\n\n*Opening hours:*\nMonday to Friday, 8am to 6pm\n(check specific hours at your campus)\n\n*Website:* https://www.udesc.br/soe\n*Email:* soe@udesc.br\n\n*Location:*\nThe SOE operates at each campus. Ask at your campus secretariat for the exact location.\n\nThe SOE is especially helpful for international students adapting to life in Brazil.",
 
   "residencia": {
-    "header": "🏠 *STUDENT HOUSING*\n\nHousing availability varies by campus. Select yours:\n\n",
-    "not_available": "🏠 *Student Housing — {center}*\n\nThis campus does *not* have its own student residence hall.\n\n💡 *Housing alternatives:*\n• Student houses (shared housing)\n• Studios and apartments near campus\n• UDESC student groups on WhatsApp\n• The tutoring team can help with recommendations\n\n📞 Contact your campus tutoring team for nearby, safe housing options.",
-    "available_template": "🏠 *Student Housing — {center}*\n\n✅ *This campus has student housing available!*\n\n{residencia_info}\n\n📞 *For more information and applications:*\n{tutoria_contact}"
+    "header": " *STUDENT HOUSING*\n\nHousing availability varies by campus. Select yours:\n\n",
+    "not_available": " *Student Housing — {center}*\n\nThis campus does *not* have its own student residence hall.\n\n*Housing alternatives:*\n• Student houses (shared housing)\n• Studios and apartments near campus\n• UDESC student groups on WhatsApp\n• The tutoring team can help with recommendations\n\nContact your campus tutoring team for nearby, safe housing options.",
+    "available_template": " *Student Housing — {center}*\n\n*This campus has student housing available!*\n\n{residencia_info}\n\n*For more information and applications:*\n{tutoria_contact}"
   },
 
   "faq": {
-    "header": "❓ *FAQ — FREQUENTLY ASKED QUESTIONS*\n\nChoose a category:\n\n1️⃣  University Restaurant\n2️⃣  Transportation\n3️⃣  Wi-Fi Internet\n4️⃣  Printing\n5️⃣  Banks & Currency Exchange\n6️⃣  SIM Card\n7️⃣  Housing\n",
+    "header": " *FAQ — FREQUENTLY ASKED QUESTIONS*\n\nChoose a category:\n\n1 - University Restaurant\n2 - Transportation\n3 - Wi-Fi Internet\n4 - Printing\n5 - Banks & Currency Exchange\n6 - SIM Card\n7 - Housing\n",
     "items": {
-      "ru": "🍽️ *UNIVERSITY RESTAURANT*\n\nSome UDESC campuses have a cafeteria or partnerships with nearby restaurants.\n\n🏛️ *CCT — Joinville:*\nStudent cafeteria with subsidized prices for enrolled students.\nHours: 11am to 2pm (lunch)\n\n💡 Check with your campus tutoring team for updated hours and prices.\n\n🔗 Student Assistance: https://www.udesc.br/assistenciaestudantil",
-      "transporte": "🚌 *TRANSPORTATION*\n\n🚍 *City buses:*\n• Joinville: https://www.gttransjoinville.com.br\n• Florianópolis: https://www.consorciofloripa.com.br\n\n📱 *Ride-sharing apps:*\n• Uber: https://www.uber.com/br\n• 99: https://www.99app.com\n\n🎓 *Student transit discount (half fare):*\nEnrolled students are entitled to half-price public transit. Apply at your campus secretariat with your enrollment proof.\n\n✈️ *Nearest airports:*\n• Joinville: Lauro Carneiro de Loyola Airport\n• Florianópolis: Hercílio Luz Airport\n• Lages: Antônio Correia Pinto de Macedo Airport",
-      "wifi": "📶 *WI-FI INTERNET*\n\n✅ *UDESC Network:*\nAll campuses offer free Wi-Fi for students.\n\n🌍 *Eduroam Network:*\nUDESC is part of the Eduroam network — connect at universities worldwide using your institutional login!\n\n📱 *How to connect:*\n1️⃣ Select network *UDESC* or *eduroam*\n2️⃣ Login: yourID@udesc.br\n3️⃣ Password: your UDESC ID password\n\n🔗 More info: https://www.udesc.br/sti/redes",
-      "impressao": "🖨️ *PRINTING*\n\n📄 *On campus:*\nSome campuses offer printing services for students. Check with the secretariat or tutoring team about prices and availability.\n\n🏪 *Nearby print shops:*\nThere are print and copy shops near all campuses. The tutoring team can recommend affordable options.\n\n💡 *Tip:* Use OneDrive (Office 365) to save and access your files from any university computer.",
-      "bancos": "🏦 *BANKS & CURRENCY EXCHANGE*\n\n🏧 *Major Brazilian banks:*\nBanco do Brasil, Caixa, Bradesco, Itaú and Santander have branches in all UDESC cities.\n\n📱 *Digital banks (easiest for foreigners):*\n• Nubank: https://nubank.com.br\n• Inter: https://bancointer.com.br\n• C6 Bank: https://c6bank.com.br\n\n💡 Digital banks usually open accounts with just a CPF and selfie — no guarantor required!\n\n📋 *Documents for a traditional bank account:*\n• Valid CPF (validated in person)\n• Passport\n• Proof of address\n• Student visa\n\n💱 *International transfers:*\n• Wise: https://wise.com (best exchange rates)\n• Currency exchange offices in city centers",
-      "chip": "📱 *SIM CARD*\n\n📋 *Required documents:*\n• CPF (mandatory!)\n• Passport\n\n📡 *Main carriers:*\n• Claro: https://www.claro.com.br\n• Vivo: https://www.vivo.com.br\n• TIM: https://www.tim.com.br\n• Oi: https://www.oi.com.br\n\n💡 *Tip for international students:*\nBuy a *prepaid SIM* first — no proof of address required!\nSIM cards are sold at carrier stores, pharmacies and supermarkets.\n\n📶 Joinville and Florianópolis have excellent 4G/5G coverage from all carriers.",
-      "moradia": "🏠 *HOUSING*\n\n🏘️ *Types of housing:*\n• *Student house (república):* Shared house — most affordable option\n• *Studio (kitnet):* Individual unit with small kitchen\n• *Shared apartment:* 2-3 people splitting rent\n\n📱 *Where to search:*\n• OLX: https://www.olx.com.br\n• Quinto Andar: https://www.quintoandar.com.br\n• UDESC student groups on Facebook/WhatsApp\n\n📞 *The tutoring team can help:*\nThey usually have lists of nearby properties and can recommend safe neighborhoods.\n\n💰 *Average prices (Joinville — CCT):*\n• Room in shared house: R$ 500–900/month\n• Studio: R$ 700–1,300/month\n• Shared apartment (per person): R$ 600–1,000/month\n\n⚠️ Rentals usually require a Brazilian guarantor or rental insurance."
+      "ru": "️ *UNIVERSITY RESTAURANT*\n\nSome UDESC campuses have a cafeteria or partnerships with nearby restaurants.\n\n️ *CCT — Joinville:*\nStudent cafeteria with subsidized prices for enrolled students.\nHours: 11am to 2pm (lunch)\n\nCheck with your campus tutoring team for updated hours and prices.\n\nStudent Assistance: https://www.udesc.br/assistenciaestudantil",
+      "transporte": " *TRANSPORTATION*\n\n*City buses:*\n• Joinville: https://www.gttransjoinville.com.br\n• Florianópolis: https://www.consorciofloripa.com.br\n\n*Ride-sharing apps:*\n• Uber: https://www.uber.com/br\n• 99: https://www.99app.com\n\n*Student transit discount (half fare):*\nEnrolled students are entitled to half-price public transit. Apply at your campus secretariat with your enrollment proof.\n\n️ *Nearest airports:*\n• Joinville: Lauro Carneiro de Loyola Airport\n• Florianópolis: Hercílio Luz Airport\n• Lages: Antônio Correia Pinto de Macedo Airport",
+      "wifi": " *WI-FI INTERNET*\n\n*UDESC Network:*\nAll campuses offer free Wi-Fi for students.\n\n*Eduroam Network:*\nUDESC is part of the Eduroam network — connect at universities worldwide using your institutional login!\n\n*How to connect:*\n1 Select network *UDESC* or *eduroam*\n2 Login: yourID@udesc.br\n3 Password: your UDESC ID password\n\nMore info: https://www.udesc.br/sti/redes",
+      "impressao": "️ *PRINTING*\n\n*On campus:*\nSome campuses offer printing services for students. Check with the secretariat or tutoring team about prices and availability.\n\n*Nearby print shops:*\nThere are print and copy shops near all campuses. The tutoring team can recommend affordable options.\n\n*Tip:* Use OneDrive (Office 365) to save and access your files from any university computer.",
+      "bancos": " *BANKS & CURRENCY EXCHANGE*\n\n*Major Brazilian banks:*\nBanco do Brasil, Caixa, Bradesco, Itaú and Santander have branches in all UDESC cities.\n\n*Digital banks (easiest for foreigners):*\n• Nubank: https://nubank.com.br\n• Inter: https://bancointer.com.br\n• C6 Bank: https://c6bank.com.br\n\nDigital banks usually open accounts with just a CPF and selfie — no guarantor required!\n\n*Documents for a traditional bank account:*\n• Valid CPF (validated in person)\n• Passport\n• Proof of address\n• Student visa\n\n*International transfers:*\n• Wise: https://wise.com (best exchange rates)\n• Currency exchange offices in city centers",
+      "chip": " *SIM CARD*\n\n*Required documents:*\n• CPF (mandatory!)\n• Passport\n\n*Main carriers:*\n• Claro: https://www.claro.com.br\n• Vivo: https://www.vivo.com.br\n• TIM: https://www.tim.com.br\n• Oi: https://www.oi.com.br\n\n*Tip for international students:*\nBuy a *prepaid SIM* first — no proof of address required!\nSIM cards are sold at carrier stores, pharmacies and supermarkets.\n\nJoinville and Florianópolis have excellent 4G/5G coverage from all carriers.",
+      "moradia": " *HOUSING*\n\n️ *Types of housing:*\n• *Student house (república):* Shared house — most affordable option\n• *Studio (kitnet):* Individual unit with small kitchen\n• *Shared apartment:* 2-3 people splitting rent\n\n*Where to search:*\n• OLX: https://www.olx.com.br\n• Quinto Andar: https://www.quintoandar.com.br\n• UDESC student groups on Facebook/WhatsApp\n\n*The tutoring team can help:*\nThey usually have lists of nearby properties and can recommend safe neighborhoods.\n\n*Average prices (Joinville — CCT):*\n• Room in shared house: R$ 500–900/month\n• Studio: R$ 700–1,300/month\n• Shared apartment (per person): R$ 600–1,000/month\n\n️ Rentals usually require a Brazilian guarantor or rental insurance."
     }
   },
 
-  "emergency": "🚨 *EMERGENCY CONTACTS*\n\n📞 *Call now:*\n🚓 Military Police: *190*\n🚑 SAMU (Ambulance): *192*\n🚒 Fire Department: *193*\n📞 Emergency Central: *199*\n\n🏥 *Hospitals by city:*\n• Joinville: Hospital Municipal São José — (47) 3461-9000\n• Florianópolis: University Hospital (HU-UFSC) — (48) 3721-9100\n• Lages: Hospital de Caridade — (49) 3221-2700\n• Chapecó: Hospital Regional do Oeste — (49) 3323-2666\n\n🚖 *Emergency transport:*\n• Uber: Uber app\n• 99: 99 app\n• Joinville Taxi: (47) 3433-9500\n\n🛂 *Immigration/consular issues:*\n• Federal Police: https://www.gov.br/pf/pt-br\n• Ministry of Foreign Affairs: https://www.gov.br/mre\n\n⚠️ *For medical emergencies, call 192 (SAMU) immediately!*"
+  "emergency": " *EMERGENCY CONTACTS*\n\n*Call now:*\nMilitary Police: *190*\nSAMU (Ambulance): *192*\nFire Department: *193*\nEmergency Central: *199*\n\n*Hospitals by city:*\n• Joinville: Hospital Municipal São José — (47) 3441-6666\n• Florianópolis: University Hospital (HU-UFSC) — (48) 3721-9100\n• Lages: Hospital de Caridade — (49) 3221-2700\n• Chapecó: Hospital Regional do Oeste — (49) 3323-2666\n\n*Emergency transport:*\n• Uber: Uber app\n• 99: 99 app\n• Joinville Taxi: (47) 3433-9500\n\n*Immigration/consular issues:*\n• Federal Police: https://www.gov.br/pf/pt-br\n• Ministry of Foreign Affairs: https://www.gov.br/mre\n\n️ *For medical emergencies, call 192 (SAMU) immediately!*"
 }

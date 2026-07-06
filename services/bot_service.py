@@ -1,21 +1,11 @@
-"""
-Núcleo da lógica conversacional do ChatBot UDESC.
-
-Máquina de estados que processa mensagens independente de plataforma (RT08).
-Cada estado tem um handler dedicado; navegação global intercepta comandos
-especiais antes do dispatch.
-"""
-
 import json
 import os
 from typing import Any, Dict, Optional
 
-from models.session import Session
-from services.keyword_service import KeywordService
-from services.session_service import SessionService
-from utils.logger import get_logger
+from dataclasses import dataclass, field
+from typing import Optional, Dict, Any, List
+from datetime import datetime
 
-logger = get_logger(__name__)
 
 # Comandos de navegação global
 _NAV = {
@@ -48,11 +38,61 @@ _MAIN_MENU_OPTIONS: Dict[str, tuple] = {
 }
 
 
+@dataclass
+class Session:
+    """Representa a sessão de um usuário durante a conversa."""
+
+    user_id: str
+    platform: str
+    language: Optional[str] = None
+    state: str = "WELCOME"
+    previous_state: Optional[str] = None
+    context: Dict[str, Any] = field(default_factory=dict)
+    history: List[Dict[str, str]] = field(default_factory=list)
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
+    updated_at: str = field(default_factory=lambda: datetime.now().isoformat())
+
+    def add_to_history(self, role: str, message: str) -> None:
+        self.history.append(
+            {
+                "role": role,
+                "message": message[:500],
+                "timestamp": datetime.now().isoformat(),
+            }
+        )
+        # Mantém apenas as últimas 50 interações em memória
+        if len(self.history) > 50:
+            self.history = self.history[-50:]
+        self.updated_at = datetime.now().isoformat()
+
+
+class InMemorySessionStore:
+    """Armazena sessões em memória para o chatbot."""
+
+    def __init__(self) -> None:
+        self._sessions: Dict[str, Session] = {}
+
+    def get_or_create(self, user_id: str, platform: str) -> Session:
+        key = str(user_id)
+        session = self._sessions.get(key)
+        if session is None:
+            session = Session(user_id=key, platform=platform)
+            self._sessions[key] = session
+        elif session.platform != platform:
+            session.platform = platform
+        return session
+
+    def save(self, user_id: str, session: Session) -> None:
+        self._sessions[str(user_id)] = session
+
+    def delete(self, user_id: str) -> None:
+        self._sessions.pop(str(user_id), None)
+
+
 class BotService:
     def __init__(self) -> None:
-        self._session_svc = SessionService()
-        self._keyword_svc = KeywordService()
         self._msg: Dict[str, Any] = {}
+        self._session_svc = InMemorySessionStore()
         self._load_messages()
 
     # ------------------------------------------------------------------
@@ -65,7 +105,6 @@ class BotService:
             path = os.path.join(data_dir, f"messages_{lang}.json")
             with open(path, "r", encoding="utf-8") as f:
                 self._msg[lang] = json.load(f)
-        logger.info("[BOT] Mensagens carregadas: pt, en")
 
     def m(self, lang: str, key: str) -> Any:
         """Acessa valor no JSON por chave com notação de ponto (ex: 'faq.items.ru')."""
@@ -86,10 +125,6 @@ class BotService:
         msg = (text or "").strip()
         lang = session.language or "pt"
 
-        logger.info(
-            f"[MSG] plataforma={platform} user={user_id} "
-            f"estado={session.state} msg={msg[:60]!r}"
-        )
 
         session.add_to_history("user", msg)
 
@@ -186,11 +221,8 @@ class BotService:
         if not msg:
             return self.m(lang, "main_menu")
 
-        # Busca por palavras-chave antes de verificar número (RF14)
-        kw_option = self._keyword_svc.find_menu_option(msg, lang)
-        option = msg.strip() if msg.strip() in _MAIN_MENU_OPTIONS else kw_option
-
-        if not option or option not in _MAIN_MENU_OPTIONS:
+        option = msg.strip()
+        if option not in _MAIN_MENU_OPTIONS:
             return self.m(lang, "invalid_option") + "\n\n" + self.m(lang, "main_menu")
 
         if option == "0":
@@ -546,5 +578,4 @@ class BotService:
         return self.m(lang, content_key) + self.m(lang, "navigation_hint")
 
 
-# Instância singleton usada pelos controllers
 bot_service = BotService()
